@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.props" Condition="Exists('..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{FF133BF4-5CB6-4036-AC69-232AE99A31F4}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>OsirisI</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\local\boost_1_57_0;$(SolutionDir)..\EXTERN\inc;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\local\boost_1_57_0\lib64-msvc-12.0;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\EXTERN\libs;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\BUILD\$(ProjectName)\$(Configuration)\</OutDir>
+    <TargetExt>.lib</TargetExt>
+    <SourcePath>$(SolutionDir)..\EXTERN\src;$(SourcePath)</SourcePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetExt>.lib</TargetExt>
+    <SourcePath>$(SolutionDir)..\EXTERN\src;$(SourcePath)</SourcePath>
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\local\boost_1_57_0;$(SolutionDir)..\EXTERN\inc;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\local\boost_1_57_0\lib64-msvc-12.0;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\EXTERN\libs;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\BUILD\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(SolutionDir)..\EXTERN\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\EXTERN\libs;$(LibraryPath)</LibraryPath>
+    <OutDir>$(SolutionDir)..\BUILD\$(ProjectName)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(SolutionDir)..\EXTERN\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\EXTERN\libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OSIRISI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <ShowIncludes>true</ShowIncludes>
+      <DisableSpecificWarnings>4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;OSIRISI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <ShowIncludes>true</ShowIncludes>
+      <DisableSpecificWarnings>4005;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkStatus>
+      </LinkStatus>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OSIRISI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OSIRISI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ActorCreator.hpp" />
+    <ClInclude Include="ActorNode.hpp" />
+    <ClInclude Include="CameraActor.hpp" />
+    <ClInclude Include="ComponentNode.hpp" />
+    <ClInclude Include="Converter.hpp" />
+    <ClInclude Include="Direct3DDevice.hpp" />
+    <ClInclude Include="DirectX11Renderer.hpp" />
+    <ClInclude Include="DirectXUsings.hpp" />
+    <ClInclude Include="DX11GameModel.hpp" />
+    <ClInclude Include="DX11Mesh.hpp" />
+    <ClInclude Include="DX11Sprite.hpp" />
+    <ClInclude Include="DX11Text.hpp" />
+    <ClInclude Include="DX11Texture.hpp" />
+    <ClInclude Include="DXTextureLoader.hpp" />
+    <ClInclude Include="EngineConfiguration.hpp" />
+    <ClInclude Include="EventManager.hpp" />
+    <ClInclude Include="FileIOHelper.cpp" />
+    <ClInclude Include="FileIOHelper.hpp" />
+    <ClInclude Include="FontLoader.hpp" />
+    <ClInclude Include="GameStateManager.hpp" />
+    <ClInclude Include="HashedString.hpp" />
+    <ClInclude Include="IActor.hpp" />
+    <ClInclude Include="Font.hpp" />
+    <ClInclude Include="IComponent.hpp" />
+    <ClInclude Include="IGameModel.hpp" />
+    <ClInclude Include="IGraphicsDevice.hpp" />
+    <ClInclude Include="IMesh.hpp" />
+    <ClInclude Include="InputManager.hpp" />
+    <ClInclude Include="IOsirisObject.hpp" />
+    <ClInclude Include="IOsirisScript.hpp" />
+    <ClInclude Include="IProgressBar.hpp" />
+    <ClInclude Include="IRenderer.hpp" />
+    <ClInclude Include="IScene.hpp" />
+    <ClInclude Include="IShader.hpp" />
+    <ClInclude Include="ISprite.hpp" />
+    <ClInclude Include="IText.hpp" />
+    <ClInclude Include="ITexture.hpp" />
+    <ClInclude Include="IWindow.hpp" />
+    <ClInclude Include="JsScript.hpp" />
+    <ClInclude Include="LuaScript.hpp" />
+    <ClInclude Include="MemoryManager.hpp" />
+    <ClInclude Include="MovingActor.hpp" />
+    <ClInclude Include="OsirisI_BasicHeader.hpp" />
+    <ClInclude Include="OsirisI_ExternComponents.hpp" />
+    <ClInclude Include="OsirisI_InputEvents.hpp" />
+    <ClInclude Include="NetworkManager.hpp" />
+    <ClInclude Include="ObjectNameManager.hpp" />
+    <ClInclude Include="OsirisIEngineEventListener.hpp" />
+    <ClInclude Include="OsirisIExternStructs.hpp" />
+    <ClInclude Include="HelperFunctions.hpp" />
+    <ClInclude Include="IEvent.hpp" />
+    <ClInclude Include="IEventListener.hpp" />
+    <ClInclude Include="IGameState.hpp" />
+    <ClInclude Include="ILoader.hpp" />
+    <ClInclude Include="IResourceFile.hpp" />
+    <ClInclude Include="ISceneNode.hpp" />
+    <ClInclude Include="OsirisI_ScriptEvents.hpp" />
+    <ClInclude Include="OsirisI_SystemEvent.hpp" />
+    <ClInclude Include="OsirisI_Client.hpp" />
+    <ClInclude Include="OsirisI_Engine.hpp" />
+    <ClInclude Include="OsirisI_NetworkEvents.hpp" />
+    <ClInclude Include="OsirisI_Server.hpp" />
+    <ClInclude Include="DX11ProgressBar.hpp" />
+    <ClInclude Include="Persistor.hpp" />
+    <ClInclude Include="PythonScript.hpp" />
+    <ClInclude Include="RenderInfoFactory.hpp" />
+    <ClInclude Include="RenderInfo.hpp" />
+    <ClInclude Include="ResourceManager.hpp" />
+    <ClInclude Include="SceneManager.hpp" />
+    <ClInclude Include="DX11Shader.hpp" />
+    <ClInclude Include="ScriptManager.hpp" />
+    <ClInclude Include="ShaderInfo.hpp" />
+    <ClInclude Include="ShaderInfoFactory.hpp" />
+    <ClInclude Include="ShaderManager.hpp" />
+    <ClInclude Include="STD_IncludeHeader.hpp" />
+    <ClInclude Include="TaskManager.hpp" />
+    <ClInclude Include="ThreadPool.hpp" />
+    <ClInclude Include="LoaderManager.hpp" />
+    <ClInclude Include="Logger.hpp" />
+    <ClInclude Include="MemoryPool.hpp" />
+    <ClInclude Include="OsirisIDevice.hpp" />
+    <ClInclude Include="OsirisIHWND.hpp" />
+    <ClInclude Include="Resource.hpp" />
+    <ClInclude Include="ResourceCache.hpp" />
+    <ClInclude Include="RootNode.hpp" />
+    <ClInclude Include="SkyNode.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="OsirisIInternStructs.hpp" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Timer.hpp" />
+    <ClInclude Include="WaveFrontObjectModelLoader.hpp" />
+    <ClInclude Include="ZIPResourceFile.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ActorCreator.cpp" />
+    <ClCompile Include="ActorNode.cpp" />
+    <ClCompile Include="CameraActor.cpp" />
+    <ClCompile Include="ComponentNode.cpp" />
+    <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="Direct3DDevice.cpp" />
+    <ClCompile Include="DirectX11Renderer.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="DX11GameModel.cpp" />
+    <ClCompile Include="DX11Mesh.cpp" />
+    <ClCompile Include="DX11Sprite.cpp" />
+    <ClCompile Include="DX11Text.cpp" />
+    <ClCompile Include="DX11Texture.cpp" />
+    <ClCompile Include="DXTextureLoader.cpp" />
+    <ClCompile Include="EngineConfiguration.cpp" />
+    <ClCompile Include="EventManager.cpp" />
+    <ClCompile Include="EventNames.cpp" />
+    <ClCompile Include="Font.cpp" />
+    <ClCompile Include="FontLoader.cpp" />
+    <ClCompile Include="GameStateManager.cpp" />
+    <ClCompile Include="HashedString.cpp" />
+    <ClCompile Include="HelperFunctions.cpp" />
+    <ClCompile Include="InputManager.cpp" />
+    <ClCompile Include="IOsirisObject.cpp" />
+    <ClCompile Include="IScene.cpp" />
+    <ClCompile Include="LoaderManager.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="LuaScript.cpp" />
+    <ClCompile Include="MemoryManager.cpp" />
+    <ClCompile Include="MemoryPool.cpp" />
+    <ClCompile Include="MovingActor.cpp" />
+    <ClCompile Include="ObjectNameManager.cpp" />
+    <ClCompile Include="OsirisI.cpp" />
+    <ClCompile Include="OsirisIDevice.cpp" />
+    <ClCompile Include="OsirisIEngineEventListener.cpp" />
+    <ClCompile Include="OsirisIHWND.cpp" />
+    <ClCompile Include="OsirisI_Client.cpp" />
+    <ClCompile Include="OsirisI_Server.cpp" />
+    <ClCompile Include="DX11ProgressBar.cpp" />
+    <ClCompile Include="Persistor.cpp" />
+    <ClCompile Include="RenderInfo.cpp" />
+    <ClCompile Include="RenderInfoFactory.cpp" />
+    <ClCompile Include="Resource.cpp" />
+    <ClCompile Include="ResourceCache.cpp" />
+    <ClCompile Include="ResourceManager.cpp" />
+    <ClCompile Include="RootNode.cpp" />
+    <ClCompile Include="SceneManager.cpp" />
+    <ClCompile Include="DX11Shader.cpp" />
+    <ClCompile Include="ScriptManager.cpp" />
+    <ClCompile Include="ShaderInfoFactory.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="SkyNode.cpp" />
+    <ClCompile Include="TaskManager.cpp" />
+    <ClCompile Include="ThreadPool.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp" />
+    <ClCompile Include="WaveFrontObjectModelLoader.cpp" />
+    <ClCompile Include="ZIPResourceFile.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OS_Config.ini" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.targets" Condition="Exists('..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.props'))" />
+    <Error Condition="!Exists('..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\directxtk_desktop_2015.2015.7.29.1\build\native\directxtk_desktop_2015.targets'))" />
+  </Target>
+</Project>

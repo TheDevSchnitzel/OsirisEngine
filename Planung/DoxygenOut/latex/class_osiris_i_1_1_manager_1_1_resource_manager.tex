@@ -1,0 +1,196 @@
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager}{\section{Osiris\-I\-:\-:Manager\-:\-:Resource\-Manager Class Reference}
+\label{class_osiris_i_1_1_manager_1_1_resource_manager}\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Resource\-Manager.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource_cache}{Osiris\-I\-::\-Resources\-::\-Resource\-Cache} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a332d20b51308c5db9be8c860c9ac9471}{Get\-Cache} ()
+\item 
+static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource_cache}{Osiris\-I\-::\-Resources\-::\-Resource\-Cache} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a9940c5cc275ee8972eb31e7c26b0ab00}{Get\-Cache} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} name)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a7c6f74b6e9ca8ac2b09f1b823c84f61c}{Register\-Resource\-File} (\hyperlink{class_osiris_i_1_1_resources_1_1_i_resource_file}{Osiris\-I\-::\-Resources\-::\-I\-Resource\-File} $\ast$file)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a1743f19d50af8dc03d4f1a2f554405ce}{Register\-Resource\-File} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String}, std\-::string file\-Path)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_aa38f8039dc0a0c103ca34db6bb84abf8}{Remove\-Resource\-File} (\hyperlink{class_osiris_i_1_1_resources_1_1_i_resource_file}{Osiris\-I\-::\-Resources\-::\-I\-Resource\-File} $\ast$file)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_af27e48836aefc06f300cc9ac8333845c}{Remove\-Resource\-File} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String})
+\item 
+{\footnotesize template$<$class T $>$ }\\static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a32abf011b610c9b123bc3aa1475c4b46}{Create\-Cache} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} name, unsigned int size)
+\item 
+{\footnotesize template$<$class T $>$ }\\static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource}{Osiris\-I\-::\-Resources\-::\-Resource} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_aa304b5c8796f1077dd66b9359bd55e7d}{Get\-Resource} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} res\-Path)
+\item 
+static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource}{Osiris\-I\-::\-Resources\-::\-Resource} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_aa4bb81329757db9c66007feae99afbe6}{Get\-Resource} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} res\-Path, \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} cache\-Name)
+\item 
+static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource}{Osiris\-I\-::\-Resources\-::\-Resource} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a07055371791526f942e6bdd837f62336}{Get\-Resource\-Directly} (std\-::string res\-Path)
+\begin{DoxyCompactList}\small\item\em Get\-Resource\-Directly loads the specified resource without caching it. \end{DoxyCompactList}\item 
+{\footnotesize template$<$class T $>$ }\\static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource}{Osiris\-I\-::\-Resources\-::\-Resource} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a2ab390a2589ad5d99c0640d912c80fd8}{Load\-And\-Cache} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} path, \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} resource\-Name)
+\item 
+{\footnotesize template$<$class T $>$ }\\static \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource}{Osiris\-I\-::\-Resources\-::\-Resource} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a734a7145363244e672a116ff6363ae0f}{Load\-Without\-Cache} (char $\ast$raw\-Data, unsigned int data\-Size)
+\item 
+{\footnotesize template$<$class T $>$ }\\static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a10c68fc92920b7b807543ebc3f982c80}{Release\-Cache} ()
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a3a9a4d47fea03b3d549b28ea6a6063bb}{Release\-Cache} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} name)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a560e8e0b02e30fbfb4cd1e9def4ecc2f}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::map\\*
+$<$ \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String}, \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_i_resource_file}{Osiris\-I\-::\-Resources\-::\-I\-Resource\-File} $\ast$ $>$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_a95179adee0410f0102d5bb042dec82f6}{resource\-Files}
+\item 
+static std\-::map\\*
+$<$ \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String}, \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource_cache}{Osiris\-I\-::\-Resources\-::\-Resource\-Cache} $\ast$ $>$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_ae234f6a64775292c06c0c94025142cdd}{caches\-Name}
+\item 
+static std\-::map$<$ size\-\_\-t, \\*
+\hyperlink{class_osiris_i_1_1_resources_1_1_resource_cache}{Osiris\-I\-::\-Resources\-::\-Resource\-Cache} $\ast$ $>$ \hyperlink{class_osiris_i_1_1_manager_1_1_resource_manager_ae23af6211526383de442b9b99abbbfc9}{caches\-Type}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a32abf011b610c9b123bc3aa1475c4b46}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Create\-Cache@{Create\-Cache}}
+\index{Create\-Cache@{Create\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Create\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Create\-Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{name, }
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a32abf011b610c9b123bc3aa1475c4b46}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a332d20b51308c5db9be8c860c9ac9471}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Get\-Cache@{Get\-Cache}}
+\index{Get\-Cache@{Get\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Get\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf Osiris\-I\-::\-Resources\-::\-Resource\-Cache}$\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Get\-Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a332d20b51308c5db9be8c860c9ac9471}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a9940c5cc275ee8972eb31e7c26b0ab00}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Get\-Cache@{Get\-Cache}}
+\index{Get\-Cache@{Get\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Get\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource\-Cache} $\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Get\-Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a9940c5cc275ee8972eb31e7c26b0ab00}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_aa304b5c8796f1077dd66b9359bd55e7d}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Get\-Resource@{Get\-Resource}}
+\index{Get\-Resource@{Get\-Resource}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Get\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf Osiris\-I\-::\-Resources\-::\-Resource}$\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Get\-Resource (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{res\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_aa304b5c8796f1077dd66b9359bd55e7d}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_aa4bb81329757db9c66007feae99afbe6}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Get\-Resource@{Get\-Resource}}
+\index{Get\-Resource@{Get\-Resource}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Get\-Resource}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource} $\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Get\-Resource (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{res\-Path, }
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{cache\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_aa4bb81329757db9c66007feae99afbe6}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a07055371791526f942e6bdd837f62336}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Get\-Resource\-Directly@{Get\-Resource\-Directly}}
+\index{Get\-Resource\-Directly@{Get\-Resource\-Directly}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Get\-Resource\-Directly}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Resource} $\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Get\-Resource\-Directly (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{res\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a07055371791526f942e6bdd837f62336}
+
+
+Get\-Resource\-Directly loads the specified resource without caching it. 
+
+Furthermore the resource is not given to any type-\/loader, so it just contains a char array with raw data. \hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a2ab390a2589ad5d99c0640d912c80fd8}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Load\-And\-Cache@{Load\-And\-Cache}}
+\index{Load\-And\-Cache@{Load\-And\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Load\-And\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf Osiris\-I\-::\-Resources\-::\-Resource}$\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Load\-And\-Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{path, }
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{resource\-Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a2ab390a2589ad5d99c0640d912c80fd8}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a734a7145363244e672a116ff6363ae0f}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Load\-Without\-Cache@{Load\-Without\-Cache}}
+\index{Load\-Without\-Cache@{Load\-Without\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Load\-Without\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf Osiris\-I\-::\-Resources\-::\-Resource}$\ast$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Load\-Without\-Cache (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{raw\-Data, }
+\item[{unsigned int}]{data\-Size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a734a7145363244e672a116ff6363ae0f}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a7c6f74b6e9ca8ac2b09f1b823c84f61c}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Register\-Resource\-File@{Register\-Resource\-File}}
+\index{Register\-Resource\-File@{Register\-Resource\-File}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Register\-Resource\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Register\-Resource\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Resources\-::\-I\-Resource\-File} $\ast$}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a7c6f74b6e9ca8ac2b09f1b823c84f61c}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a1743f19d50af8dc03d4f1a2f554405ce}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Register\-Resource\-File@{Register\-Resource\-File}}
+\index{Register\-Resource\-File@{Register\-Resource\-File}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Register\-Resource\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Register\-Resource\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{name, }
+\item[{std\-::string}]{file\-Path}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a1743f19d50af8dc03d4f1a2f554405ce}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a560e8e0b02e30fbfb4cd1e9def4ecc2f}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Release@{Release}}
+\index{Release@{Release}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a560e8e0b02e30fbfb4cd1e9def4ecc2f}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a10c68fc92920b7b807543ebc3f982c80}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Release\-Cache@{Release\-Cache}}
+\index{Release\-Cache@{Release\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Release\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T $>$ static {\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Release\-Cache (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a10c68fc92920b7b807543ebc3f982c80}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a3a9a4d47fea03b3d549b28ea6a6063bb}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Release\-Cache@{Release\-Cache}}
+\index{Release\-Cache@{Release\-Cache}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Release\-Cache}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Release\-Cache (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a3a9a4d47fea03b3d549b28ea6a6063bb}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_aa38f8039dc0a0c103ca34db6bb84abf8}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Remove\-Resource\-File@{Remove\-Resource\-File}}
+\index{Remove\-Resource\-File@{Remove\-Resource\-File}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Remove\-Resource\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Remove\-Resource\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Resources\-::\-I\-Resource\-File} $\ast$}]{file}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_aa38f8039dc0a0c103ca34db6bb84abf8}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_af27e48836aefc06f300cc9ac8333845c}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!Remove\-Resource\-File@{Remove\-Resource\-File}}
+\index{Remove\-Resource\-File@{Remove\-Resource\-File}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{Remove\-Resource\-File}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::\-Remove\-Resource\-File (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_af27e48836aefc06f300cc9ac8333845c}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_ae234f6a64775292c06c0c94025142cdd}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!caches\-Name@{caches\-Name}}
+\index{caches\-Name@{caches\-Name}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{caches\-Name}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ Hashed\-String, Resource\-Cache $\ast$ $>$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::caches\-Name\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_ae234f6a64775292c06c0c94025142cdd}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_ae23af6211526383de442b9b99abbbfc9}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!caches\-Type@{caches\-Type}}
+\index{caches\-Type@{caches\-Type}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{caches\-Type}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ size\-\_\-t, {\bf Osiris\-I\-::\-Resources\-::\-Resource\-Cache} $\ast$ $>$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::caches\-Type\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_ae23af6211526383de442b9b99abbbfc9}
+\hypertarget{class_osiris_i_1_1_manager_1_1_resource_manager_a95179adee0410f0102d5bb042dec82f6}{\index{Osiris\-I\-::\-Manager\-::\-Resource\-Manager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}!resource\-Files@{resource\-Files}}
+\index{resource\-Files@{resource\-Files}!OsirisI::Manager::ResourceManager@{Osiris\-I\-::\-Manager\-::\-Resource\-Manager}}
+\subsubsection[{resource\-Files}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ Hashed\-String, I\-Resource\-File $\ast$ $>$ Osiris\-I\-::\-Manager\-::\-Resource\-Manager\-::resource\-Files\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_resource_manager_a95179adee0410f0102d5bb042dec82f6}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_resource_manager_8hpp}{Resource\-Manager.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_resource_manager_8cpp}{Resource\-Manager.\-cpp}\end{DoxyCompactItemize}

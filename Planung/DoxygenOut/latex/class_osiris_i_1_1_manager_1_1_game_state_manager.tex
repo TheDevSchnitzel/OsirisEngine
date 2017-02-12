@@ -1,0 +1,106 @@
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager}{\section{Osiris\-I\-:\-:Manager\-:\-:Game\-State\-Manager Class Reference}
+\label{class_osiris_i_1_1_manager_1_1_game_state_manager}\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Game\-State\-Manager.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+\hyperlink{class_osiris_i_1_1_interfaces_1_1_i_game_state}{Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_aefbc558a6895ef0f97ca175827ea8609}{Get\-Active\-Game\-State} ()
+\item 
+static void \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_aff03613d57a1ffc514c67a89727e0c95}{Set\-Active\-Game\-State} (\hyperlink{class_osiris_i_1_1_interfaces_1_1_i_game_state}{Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$game\-State)
+\item 
+static void \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_adbcefe3c2bd77597436a4f6e222c7b7f}{Add\-Game\-State} (\hyperlink{class_osiris_i_1_1_interfaces_1_1_i_game_state}{Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$game\-State)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_a3a31440e1ef2e78acf622c2eeb91281e}{Remove\-Game\-State} (long name\-Hash)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_ac882b66c4982e08c3dde62a7f7accd29}{Update} (float delta)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_a016a2449c646711334e9da61481bab72}{Render} ()
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_a8ef56453a6d72d08f5aeb236bc3de418}{Release} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+\hyperlink{class_osiris_i_1_1_interfaces_1_1_i_game_state}{Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_a9725a5c24a6572d9408f5abdcfb5f46a}{active\-State}
+\item 
+static std\-::map$<$ long, \\*
+\hyperlink{class_osiris_i_1_1_interfaces_1_1_i_game_state}{Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$ $>$ \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_aa7b5fed5ad3acd852830ef5a8f094c6e}{game\-States}
+\item 
+static std\-::mutex \hyperlink{class_osiris_i_1_1_manager_1_1_game_state_manager_ada0db500e8111d19023ef2b0103f4a0f}{active\-State\-Mutex}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_adbcefe3c2bd77597436a4f6e222c7b7f}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Add\-Game\-State@{Add\-Game\-State}}
+\index{Add\-Game\-State@{Add\-Game\-State}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Add\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Add\-Game\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$}]{game\-State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_adbcefe3c2bd77597436a4f6e222c7b7f}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_aefbc558a6895ef0f97ca175827ea8609}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Get\-Active\-Game\-State@{Get\-Active\-Game\-State}}
+\index{Get\-Active\-Game\-State@{Get\-Active\-Game\-State}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Get\-Active\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$ Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Get\-Active\-Game\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_aefbc558a6895ef0f97ca175827ea8609}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_a8ef56453a6d72d08f5aeb236bc3de418}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Release@{Release}}
+\index{Release@{Release}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_a8ef56453a6d72d08f5aeb236bc3de418}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_a3a31440e1ef2e78acf622c2eeb91281e}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Remove\-Game\-State@{Remove\-Game\-State}}
+\index{Remove\-Game\-State@{Remove\-Game\-State}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Remove\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Remove\-Game\-State (
+\begin{DoxyParamCaption}
+\item[{long}]{name\-Hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_a3a31440e1ef2e78acf622c2eeb91281e}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_a016a2449c646711334e9da61481bab72}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Render@{Render}}
+\index{Render@{Render}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_a016a2449c646711334e9da61481bab72}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_aff03613d57a1ffc514c67a89727e0c95}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Set\-Active\-Game\-State@{Set\-Active\-Game\-State}}
+\index{Set\-Active\-Game\-State@{Set\-Active\-Game\-State}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Set\-Active\-Game\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Set\-Active\-Game\-State (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$}]{game\-State}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_aff03613d57a1ffc514c67a89727e0c95}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_ac882b66c4982e08c3dde62a7f7accd29}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!Update@{Update}}
+\index{Update@{Update}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{float}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_ac882b66c4982e08c3dde62a7f7accd29}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_a9725a5c24a6572d9408f5abdcfb5f46a}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!active\-State@{active\-State}}
+\index{active\-State@{active\-State}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{active\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$ Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::active\-State\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_a9725a5c24a6572d9408f5abdcfb5f46a}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_ada0db500e8111d19023ef2b0103f4a0f}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!active\-State\-Mutex@{active\-State\-Mutex}}
+\index{active\-State\-Mutex@{active\-State\-Mutex}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{active\-State\-Mutex}]{\setlength{\rightskip}{0pt plus 5cm}std\-::mutex Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::active\-State\-Mutex\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_ada0db500e8111d19023ef2b0103f4a0f}
+\hypertarget{class_osiris_i_1_1_manager_1_1_game_state_manager_aa7b5fed5ad3acd852830ef5a8f094c6e}{\index{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}!game\-States@{game\-States}}
+\index{game\-States@{game\-States}!OsirisI::Manager::GameStateManager@{Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager}}
+\subsubsection[{game\-States}]{\setlength{\rightskip}{0pt plus 5cm}std\-::map$<$ long, {\bf Osiris\-I\-::\-Interfaces\-::\-I\-Game\-State} $\ast$ $>$ Osiris\-I\-::\-Manager\-::\-Game\-State\-Manager\-::game\-States\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_game_state_manager_aa7b5fed5ad3acd852830ef5a8f094c6e}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_game_state_manager_8hpp}{Game\-State\-Manager.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_game_state_manager_8cpp}{Game\-State\-Manager.\-cpp}\end{DoxyCompactItemize}

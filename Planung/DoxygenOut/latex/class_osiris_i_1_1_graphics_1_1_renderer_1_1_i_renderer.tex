@@ -1,0 +1,160 @@
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer}{\section{Osiris\-I\-:\-:Graphics\-:\-:Renderer\-:\-:I\-Renderer Class Reference}
+\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer}\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+}
+
+
+{\ttfamily \#include $<$I\-Renderer.\-hpp$>$}
+
+Inheritance diagram for Osiris\-I\-:\-:Graphics\-:\-:Renderer\-:\-:I\-Renderer\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a73c2fa9b3d3c9c4b315499f1e647f7c2}{Begin\-Rendering} ()=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aea5ddc956f9d324f3875847aeebe3a85}{Render} (\hyperlink{struct_osiris_i_1_1_graphics_1_1_renderer_1_1_render_info}{Render\-Info} $\ast$info)=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa1815add9e7de56a096c2852b78de351}{End\-Rendering} ()=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa423ead00f38c631da7cb9dd847ab344}{Transform\-Camera} (\hyperlink{struct_osiris_i_1_1_o_matrix4x4}{O\-Matrix4x4} $\ast$rotation\-Matrix, \hyperlink{struct_osiris_i_1_1_o_vector3}{O\-Vector3} $\ast$rotation, \hyperlink{struct_osiris_i_1_1_o_vector3}{O\-Vector3} $\ast$look\-At, \hyperlink{struct_osiris_i_1_1_o_vector3}{O\-Vector3} $\ast$up, \hyperlink{struct_osiris_i_1_1_o_matrix4x4}{O\-Matrix4x4} $\ast$view\-Matrix, \hyperlink{struct_osiris_i_1_1_o_vector3}{O\-Vector3} $\ast$position)=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a80b6e90ce3fe6afb282975b8314911f9}{Render\-Camera} ()=0
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a125f369668d64fdad788b2c09000556b}{Set\-Root\-Node} (\hyperlink{class_osiris_i_1_1_graphics_1_1_scenes_1_1_i_scene_node}{Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$\hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a402abcc0f06b70e7eea0706ac905c846}{root\-Node})
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a1881f836babb0923a58a959bd3cdea84}{Set\-Camera\-Node} (\hyperlink{class_osiris_i_1_1_graphics_1_1_scenes_1_1_i_scene_node}{Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$\hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_af2af2a7bd5fb61a0067fc4f3e69b9761}{camera\-Node})
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_scenes_1_1_i_scene_node}{Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa52a5485fb2b04fc420fd615477ac683}{Get\-Camera\-Node} ()
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_adc629290666c90dc546a139cef4e8f3b}{Get\-Base\-View\-Matrix} (\hyperlink{struct_osiris_i_1_1_o_matrix4x4}{Osiris\-I\-::\-O\-Matrix4x4} \&Base\-View\-Matrix)
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a3cc53b896fdc724d4f9519f5814fa179}{Set\-Base\-View\-Matrix} (\hyperlink{struct_osiris_i_1_1_o_matrix4x4}{Osiris\-I\-::\-O\-Matrix4x4} Base\-View\-Matrix)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_scenes_1_1_i_scene_node}{Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a402abcc0f06b70e7eea0706ac905c846}{root\-Node}
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_scenes_1_1_i_scene_node}{Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_af2af2a7bd5fb61a0067fc4f3e69b9761}{camera\-Node}
+\item 
+\hyperlink{struct_osiris_i_1_1_o_matrix4x4}{O\-Matrix4x4} \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a7abb76a8ff2d8d056609e430babdcef4}{base\-View\-Matrix}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a73c2fa9b3d3c9c4b315499f1e647f7c2}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Begin\-Rendering@{Begin\-Rendering}}
+\index{Begin\-Rendering@{Begin\-Rendering}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Begin\-Rendering}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Begin\-Rendering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a73c2fa9b3d3c9c4b315499f1e647f7c2}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_direct_x11_renderer_a4f6bebdcf9d286b8fc19276630fd7737}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Direct\-X11\-Renderer}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa1815add9e7de56a096c2852b78de351}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!End\-Rendering@{End\-Rendering}}
+\index{End\-Rendering@{End\-Rendering}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{End\-Rendering}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-End\-Rendering (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa1815add9e7de56a096c2852b78de351}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_direct_x11_renderer_afcd55666d36232a6e637788c038a10b8}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Direct\-X11\-Renderer}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_adc629290666c90dc546a139cef4e8f3b}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Get\-Base\-View\-Matrix@{Get\-Base\-View\-Matrix}}
+\index{Get\-Base\-View\-Matrix@{Get\-Base\-View\-Matrix}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Get\-Base\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Get\-Base\-View\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-O\-Matrix4x4} \&}]{Base\-View\-Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_adc629290666c90dc546a139cef4e8f3b}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa52a5485fb2b04fc420fd615477ac683}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Get\-Camera\-Node@{Get\-Camera\-Node}}
+\index{Get\-Camera\-Node@{Get\-Camera\-Node}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Get\-Camera\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node}$\ast$ Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Get\-Camera\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa52a5485fb2b04fc420fd615477ac683}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aea5ddc956f9d324f3875847aeebe3a85}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Render@{Render}}
+\index{Render@{Render}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Render (
+\begin{DoxyParamCaption}
+\item[{{\bf Render\-Info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aea5ddc956f9d324f3875847aeebe3a85}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_direct_x11_renderer_a8e86c44e7b68b266e7ff288eaabe21f0}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Direct\-X11\-Renderer}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a80b6e90ce3fe6afb282975b8314911f9}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Render\-Camera@{Render\-Camera}}
+\index{Render\-Camera@{Render\-Camera}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Render\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Render\-Camera (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a80b6e90ce3fe6afb282975b8314911f9}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_direct_x11_renderer_ad0cd2148a2f1bbff0372775c887babda}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Direct\-X11\-Renderer}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a3cc53b896fdc724d4f9519f5814fa179}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Set\-Base\-View\-Matrix@{Set\-Base\-View\-Matrix}}
+\index{Set\-Base\-View\-Matrix@{Set\-Base\-View\-Matrix}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Set\-Base\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Set\-Base\-View\-Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-O\-Matrix4x4}}]{Base\-View\-Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a3cc53b896fdc724d4f9519f5814fa179}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a1881f836babb0923a58a959bd3cdea84}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Set\-Camera\-Node@{Set\-Camera\-Node}}
+\index{Set\-Camera\-Node@{Set\-Camera\-Node}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Set\-Camera\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Set\-Camera\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$}]{camera\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a1881f836babb0923a58a959bd3cdea84}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a125f369668d64fdad788b2c09000556b}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Set\-Root\-Node@{Set\-Root\-Node}}
+\index{Set\-Root\-Node@{Set\-Root\-Node}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Set\-Root\-Node}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Set\-Root\-Node (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node} $\ast$}]{root\-Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a125f369668d64fdad788b2c09000556b}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa423ead00f38c631da7cb9dd847ab344}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!Transform\-Camera@{Transform\-Camera}}
+\index{Transform\-Camera@{Transform\-Camera}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{Transform\-Camera}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::\-Transform\-Camera (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-Matrix4x4} $\ast$}]{rotation\-Matrix, }
+\item[{{\bf O\-Vector3} $\ast$}]{rotation, }
+\item[{{\bf O\-Vector3} $\ast$}]{look\-At, }
+\item[{{\bf O\-Vector3} $\ast$}]{up, }
+\item[{{\bf O\-Matrix4x4} $\ast$}]{view\-Matrix, }
+\item[{{\bf O\-Vector3} $\ast$}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_aa423ead00f38c631da7cb9dd847ab344}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_renderer_1_1_direct_x11_renderer_afbe5446f10c23c3e19a4d2fab192cabb}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Direct\-X11\-Renderer}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a7abb76a8ff2d8d056609e430babdcef4}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!base\-View\-Matrix@{base\-View\-Matrix}}
+\index{base\-View\-Matrix@{base\-View\-Matrix}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{base\-View\-Matrix}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-Matrix4x4} Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::base\-View\-Matrix\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a7abb76a8ff2d8d056609e430babdcef4}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_af2af2a7bd5fb61a0067fc4f3e69b9761}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!camera\-Node@{camera\-Node}}
+\index{camera\-Node@{camera\-Node}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{camera\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node}$\ast$ Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::camera\-Node\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_af2af2a7bd5fb61a0067fc4f3e69b9761}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a402abcc0f06b70e7eea0706ac905c846}{\index{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}!root\-Node@{root\-Node}}
+\index{root\-Node@{root\-Node}!OsirisI::Graphics::Renderer::IRenderer@{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer}}
+\subsubsection[{root\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Graphics\-::\-Scenes\-::\-I\-Scene\-Node}$\ast$ Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-I\-Renderer\-::root\-Node\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_renderer_1_1_i_renderer_a402abcc0f06b70e7eea0706ac905c846}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_i_renderer_8hpp}{I\-Renderer.\-hpp}\end{DoxyCompactItemize}

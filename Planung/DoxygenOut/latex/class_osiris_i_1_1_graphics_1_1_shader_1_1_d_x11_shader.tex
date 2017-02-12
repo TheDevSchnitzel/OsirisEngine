@@ -1,0 +1,299 @@
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader}{\section{Osiris\-I\-:\-:Graphics\-:\-:Shader\-:\-:D\-X11\-Shader Class Reference}
+\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader}\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+}
+
+
+{\ttfamily \#include $<$D\-X11\-Shader.\-hpp$>$}
+
+Inheritance diagram for Osiris\-I\-:\-:Graphics\-:\-:Shader\-:\-:D\-X11\-Shader\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a09a3944bb1772c201f55f2455f8134a0}{D\-X11\-Shader} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_i_shader_a0f2d4323ae9304e517f9649831ad7231}{shader\-Name})
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_af599a882f497d197b16237000dae0807}{D\-X11\-Shader} (\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_i_shader_a0f2d4323ae9304e517f9649831ad7231}{shader\-Name}, D3\-D11\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-D\-E\-S\-C buffer\-Desc)
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a2c6a1b9a153ef4a311bd356856a1c5e5}{$\sim$\-D\-X11\-Shader} ()
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a4406375fb159b1c72effdf576579832f}{Create\-Shader} (std\-::string shader\-Path, std\-::string \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_i_shader_a0f2d4323ae9304e517f9649831ad7231}{shader\-Name}, std\-::string shader\-Version, \hyperlink{namespace_osiris_i_1_1_graphics_1_1_shader_a337cc6333eff5c701288da2fb4fd9cec}{Shader\-Types} type)
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a0db3403db2d274b4e65d90f5a6f05546}{Create\-Sampler\-State} (D3\-D11\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-D\-E\-S\-C sampler\-Desc, \hyperlink{namespace_osiris_i_1_1_graphics_1_1_shader_a337cc6333eff5c701288da2fb4fd9cec}{Shader\-Types} type)
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a3c25648f860ea801a8c6e8459594eb64}{Load\-Shader\-Info} ()
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_ac3bbdbf4839ecca8b1cdf7be312a047e}{Render} ()
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active} ()
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_af3ed086a80c2f44b2ff668a19fd5b625}{Set\-Parameter\-Matrices} (\hyperlink{struct_osiris_i_1_1_o_matrix4x4}{O\-Matrix4x4} projection\-\_\-or\-\_\-ortho\-Matrix, \hyperlink{struct_osiris_i_1_1_o_matrix4x4}{O\-Matrix4x4} world\-Matrix, \hyperlink{struct_osiris_i_1_1_o_matrix4x4}{O\-Matrix4x4} view\-Matrix)
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_adb8a501938d1bce846cf06ad05cd951c}{Set\-Input\-Layout} (I\-D3\-D11\-Input\-Layout $\ast$layout)
+\item 
+\hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1cffa0a4e683c89e02cb7d21ea2621ea}{Create\-Input\-Layout\-From\-Shader} (I\-D3\-D\-Blob $\ast$shader)
+\begin{DoxyCompactList}\small\item\em Using this function you can generate an Input\-Layout from the compiled Vertex\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_aaf870f053649151c868c7f547c68e5f6}{C\-S\-Register\-Sampler\-State} (I\-D3\-D11\-Sampler\-State $\ast$states)
+\begin{DoxyCompactList}\small\item\em This function allows to register multiple Sampler\-States for the Compute\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a47c87f540216c5dab5cf4222514e79ec}{V\-S\-Register\-Sampler\-State} (I\-D3\-D11\-Sampler\-State $\ast$states)
+\begin{DoxyCompactList}\small\item\em This function allows to register multiple Sampler\-States for the Vertex\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1c0c740b6deabc7c63dac8aab0f01c63}{H\-S\-Register\-Sampler\-State} (I\-D3\-D11\-Sampler\-State $\ast$states)
+\begin{DoxyCompactList}\small\item\em This function allows to register multiple Sampler\-States for the Hull\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a2c5585694c46000fba23f1d969daeb52}{D\-S\-Register\-Sampler\-State} (I\-D3\-D11\-Sampler\-State $\ast$states)
+\begin{DoxyCompactList}\small\item\em This function allows to register multiple Sampler\-States for the Domain\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_ad94c90c555cf5f304558268d817ad2f8}{G\-S\-Register\-Sampler\-State} (I\-D3\-D11\-Sampler\-State $\ast$states)
+\begin{DoxyCompactList}\small\item\em This function allows to register multiple Sampler\-States for the Geometry\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a5d38aac973a1fe9b2f77a702a7616ab2}{P\-S\-Register\-Sampler\-State} (I\-D3\-D11\-Sampler\-State $\ast$states)
+\begin{DoxyCompactList}\small\item\em This function allows to register multiple Sampler\-States for the Pixel\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a5fabc9b546ee8168dab24bb5495c2238}{C\-S\-Clear\-Sampler\-States} ()
+\begin{DoxyCompactList}\small\item\em Clears the registered Sampler\-States for the Compute\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a146b395e4c9246a8eb0c84f2164f5ea3}{V\-S\-Clear\-Sampler\-States} ()
+\begin{DoxyCompactList}\small\item\em Clears the registered Sampler\-States for the Vertex\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a674963e4b265c8838ecbdd02426fe06d}{H\-S\-Clear\-Sampler\-States} ()
+\begin{DoxyCompactList}\small\item\em Clears the registered Sampler\-States for Hull\-Sahder Compute\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a3549342296c043752da841a2df3a56f2}{D\-S\-Clear\-Sampler\-States} ()
+\begin{DoxyCompactList}\small\item\em Clears the registered Sampler\-States for the Domain\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a8a79b9055e21a88ade6007d3a83997dc}{G\-S\-Clear\-Sampler\-States} ()
+\begin{DoxyCompactList}\small\item\em Clears the registered Sampler\-States for the Geometry\-Shader. \end{DoxyCompactList}\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a86f12d00c0d0a33b88a1057931c92cda}{P\-S\-Clear\-Sampler\-States} ()
+\begin{DoxyCompactList}\small\item\em Clears the registered Sampler\-States for the Pixel\-Shader. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a09a3944bb1772c201f55f2455f8134a0}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!D\-X11\-Shader@{D\-X11\-Shader}}
+\index{D\-X11\-Shader@{D\-X11\-Shader}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{D\-X11\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-D\-X11\-Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{shader\-Name}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a09a3944bb1772c201f55f2455f8134a0}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_af599a882f497d197b16237000dae0807}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!D\-X11\-Shader@{D\-X11\-Shader}}
+\index{D\-X11\-Shader@{D\-X11\-Shader}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{D\-X11\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-D\-X11\-Shader (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String}}]{shader\-Name, }
+\item[{D3\-D11\-\_\-\-B\-U\-F\-F\-E\-R\-\_\-\-D\-E\-S\-C}]{buffer\-Desc}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_af599a882f497d197b16237000dae0807}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a2c6a1b9a153ef4a311bd356856a1c5e5}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!$\sim$\-D\-X11\-Shader@{$\sim$\-D\-X11\-Shader}}
+\index{$\sim$\-D\-X11\-Shader@{$\sim$\-D\-X11\-Shader}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{$\sim$\-D\-X11\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::$\sim$\-D\-X11\-Shader (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a2c6a1b9a153ef4a311bd356856a1c5e5}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1cffa0a4e683c89e02cb7d21ea2621ea}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Create\-Input\-Layout\-From\-Shader@{Create\-Input\-Layout\-From\-Shader}}
+\index{Create\-Input\-Layout\-From\-Shader@{Create\-Input\-Layout\-From\-Shader}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Create\-Input\-Layout\-From\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Create\-Input\-Layout\-From\-Shader (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D\-Blob $\ast$}]{shader}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1cffa0a4e683c89e02cb7d21ea2621ea}
+
+
+Using this function you can generate an Input\-Layout from the compiled Vertex\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a0db3403db2d274b4e65d90f5a6f05546}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Create\-Sampler\-State@{Create\-Sampler\-State}}
+\index{Create\-Sampler\-State@{Create\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Create\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Create\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{D3\-D11\-\_\-\-S\-A\-M\-P\-L\-E\-R\-\_\-\-D\-E\-S\-C}]{sampler\-Desc, }
+\item[{{\bf Shader\-Types}}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a0db3403db2d274b4e65d90f5a6f05546}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a4406375fb159b1c72effdf576579832f}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Create\-Shader@{Create\-Shader}}
+\index{Create\-Shader@{Create\-Shader}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Create\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Create\-Shader (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{shader\-Path, }
+\item[{std\-::string}]{shader\-Name, }
+\item[{std\-::string}]{shader\-Version, }
+\item[{{\bf Shader\-Types}}]{type}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a4406375fb159b1c72effdf576579832f}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a5fabc9b546ee8168dab24bb5495c2238}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!C\-S\-Clear\-Sampler\-States@{C\-S\-Clear\-Sampler\-States}}
+\index{C\-S\-Clear\-Sampler\-States@{C\-S\-Clear\-Sampler\-States}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{C\-S\-Clear\-Sampler\-States}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-C\-S\-Clear\-Sampler\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a5fabc9b546ee8168dab24bb5495c2238}
+
+
+Clears the registered Sampler\-States for the Compute\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_aaf870f053649151c868c7f547c68e5f6}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!C\-S\-Register\-Sampler\-State@{C\-S\-Register\-Sampler\-State}}
+\index{C\-S\-Register\-Sampler\-State@{C\-S\-Register\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{C\-S\-Register\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-C\-S\-Register\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Sampler\-State $\ast$}]{states}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_aaf870f053649151c868c7f547c68e5f6}
+
+
+This function allows to register multiple Sampler\-States for the Compute\-Shader. 
+
+Every Sampler\-State will be added to the shader in the \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active()} phase. \hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a3549342296c043752da841a2df3a56f2}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!D\-S\-Clear\-Sampler\-States@{D\-S\-Clear\-Sampler\-States}}
+\index{D\-S\-Clear\-Sampler\-States@{D\-S\-Clear\-Sampler\-States}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{D\-S\-Clear\-Sampler\-States}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-D\-S\-Clear\-Sampler\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a3549342296c043752da841a2df3a56f2}
+
+
+Clears the registered Sampler\-States for the Domain\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a2c5585694c46000fba23f1d969daeb52}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!D\-S\-Register\-Sampler\-State@{D\-S\-Register\-Sampler\-State}}
+\index{D\-S\-Register\-Sampler\-State@{D\-S\-Register\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{D\-S\-Register\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-D\-S\-Register\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Sampler\-State $\ast$}]{states}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a2c5585694c46000fba23f1d969daeb52}
+
+
+This function allows to register multiple Sampler\-States for the Domain\-Shader. 
+
+Every Sampler\-State will be added to the shader in the \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active()} phase. \hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a8a79b9055e21a88ade6007d3a83997dc}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!G\-S\-Clear\-Sampler\-States@{G\-S\-Clear\-Sampler\-States}}
+\index{G\-S\-Clear\-Sampler\-States@{G\-S\-Clear\-Sampler\-States}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{G\-S\-Clear\-Sampler\-States}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-G\-S\-Clear\-Sampler\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a8a79b9055e21a88ade6007d3a83997dc}
+
+
+Clears the registered Sampler\-States for the Geometry\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_ad94c90c555cf5f304558268d817ad2f8}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!G\-S\-Register\-Sampler\-State@{G\-S\-Register\-Sampler\-State}}
+\index{G\-S\-Register\-Sampler\-State@{G\-S\-Register\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{G\-S\-Register\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-G\-S\-Register\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Sampler\-State $\ast$}]{states}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_ad94c90c555cf5f304558268d817ad2f8}
+
+
+This function allows to register multiple Sampler\-States for the Geometry\-Shader. 
+
+Every Sampler\-State will be added to the shader in the \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active()} phase. \hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a674963e4b265c8838ecbdd02426fe06d}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!H\-S\-Clear\-Sampler\-States@{H\-S\-Clear\-Sampler\-States}}
+\index{H\-S\-Clear\-Sampler\-States@{H\-S\-Clear\-Sampler\-States}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{H\-S\-Clear\-Sampler\-States}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-H\-S\-Clear\-Sampler\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a674963e4b265c8838ecbdd02426fe06d}
+
+
+Clears the registered Sampler\-States for Hull\-Sahder Compute\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1c0c740b6deabc7c63dac8aab0f01c63}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!H\-S\-Register\-Sampler\-State@{H\-S\-Register\-Sampler\-State}}
+\index{H\-S\-Register\-Sampler\-State@{H\-S\-Register\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{H\-S\-Register\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-H\-S\-Register\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Sampler\-State $\ast$}]{states}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1c0c740b6deabc7c63dac8aab0f01c63}
+
+
+This function allows to register multiple Sampler\-States for the Hull\-Shader. 
+
+Every Sampler\-State will be added to the shader in the \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active()} phase. \hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a3c25648f860ea801a8c6e8459594eb64}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Load\-Shader\-Info@{Load\-Shader\-Info}}
+\index{Load\-Shader\-Info@{Load\-Shader\-Info}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Load\-Shader\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Load\-Shader\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a3c25648f860ea801a8c6e8459594eb64}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a86f12d00c0d0a33b88a1057931c92cda}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!P\-S\-Clear\-Sampler\-States@{P\-S\-Clear\-Sampler\-States}}
+\index{P\-S\-Clear\-Sampler\-States@{P\-S\-Clear\-Sampler\-States}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{P\-S\-Clear\-Sampler\-States}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-P\-S\-Clear\-Sampler\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a86f12d00c0d0a33b88a1057931c92cda}
+
+
+Clears the registered Sampler\-States for the Pixel\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a5d38aac973a1fe9b2f77a702a7616ab2}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!P\-S\-Register\-Sampler\-State@{P\-S\-Register\-Sampler\-State}}
+\index{P\-S\-Register\-Sampler\-State@{P\-S\-Register\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{P\-S\-Register\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-P\-S\-Register\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Sampler\-State $\ast$}]{states}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a5d38aac973a1fe9b2f77a702a7616ab2}
+
+
+This function allows to register multiple Sampler\-States for the Pixel\-Shader. 
+
+Every Sampler\-State will be added to the shader in the \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active()} phase. \hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_ac3bbdbf4839ecca8b1cdf7be312a047e}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Render@{Render}}
+\index{Render@{Render}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Render}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Render (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_ac3bbdbf4839ecca8b1cdf7be312a047e}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Set\-Active@{Set\-Active}}
+\index{Set\-Active@{Set\-Active}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Set\-Active}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Set\-Active (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}
+
+
+Implements \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_i_shader_a0c443cfb8d2dc86809959798469c6db4}{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-I\-Shader}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_adb8a501938d1bce846cf06ad05cd951c}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Set\-Input\-Layout@{Set\-Input\-Layout}}
+\index{Set\-Input\-Layout@{Set\-Input\-Layout}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Set\-Input\-Layout}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Set\-Input\-Layout (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Input\-Layout $\ast$}]{layout}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_adb8a501938d1bce846cf06ad05cd951c}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_af3ed086a80c2f44b2ff668a19fd5b625}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!Set\-Parameter\-Matrices@{Set\-Parameter\-Matrices}}
+\index{Set\-Parameter\-Matrices@{Set\-Parameter\-Matrices}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{Set\-Parameter\-Matrices}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-Set\-Parameter\-Matrices (
+\begin{DoxyParamCaption}
+\item[{{\bf O\-Matrix4x4}}]{projection\-\_\-or\-\_\-ortho\-Matrix, }
+\item[{{\bf O\-Matrix4x4}}]{world\-Matrix, }
+\item[{{\bf O\-Matrix4x4}}]{view\-Matrix}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_af3ed086a80c2f44b2ff668a19fd5b625}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a146b395e4c9246a8eb0c84f2164f5ea3}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!V\-S\-Clear\-Sampler\-States@{V\-S\-Clear\-Sampler\-States}}
+\index{V\-S\-Clear\-Sampler\-States@{V\-S\-Clear\-Sampler\-States}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{V\-S\-Clear\-Sampler\-States}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-V\-S\-Clear\-Sampler\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a146b395e4c9246a8eb0c84f2164f5ea3}
+
+
+Clears the registered Sampler\-States for the Vertex\-Shader. 
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a47c87f540216c5dab5cf4222514e79ec}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}!V\-S\-Register\-Sampler\-State@{V\-S\-Register\-Sampler\-State}}
+\index{V\-S\-Register\-Sampler\-State@{V\-S\-Register\-Sampler\-State}!OsirisI::Graphics::Shader::DX11Shader@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader}}
+\subsubsection[{V\-S\-Register\-Sampler\-State}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-D\-X11\-Shader\-::\-V\-S\-Register\-Sampler\-State (
+\begin{DoxyParamCaption}
+\item[{I\-D3\-D11\-Sampler\-State $\ast$}]{states}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a47c87f540216c5dab5cf4222514e79ec}
+
+
+This function allows to register multiple Sampler\-States for the Vertex\-Shader. 
+
+Every Sampler\-State will be added to the shader in the \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_d_x11_shader_a1805b3cb0de70b4184de51667d6ceee7}{Set\-Active()} phase. 
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_d_x11_shader_8hpp}{D\-X11\-Shader.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_d_x11_shader_8cpp}{D\-X11\-Shader.\-cpp}\end{DoxyCompactItemize}

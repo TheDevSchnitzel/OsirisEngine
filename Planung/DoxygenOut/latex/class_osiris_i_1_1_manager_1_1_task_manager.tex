@@ -1,0 +1,67 @@
+\hypertarget{class_osiris_i_1_1_manager_1_1_task_manager}{\section{Osiris\-I\-:\-:Manager\-:\-:Task\-Manager Class Reference}
+\label{class_osiris_i_1_1_manager_1_1_task_manager}\index{Osiris\-I\-::\-Manager\-::\-Task\-Manager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Task\-Manager.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_task_manager_a5c63688497335d230c16982063264760}{Initialize} ()
+\item 
+static void \hyperlink{class_osiris_i_1_1_manager_1_1_task_manager_ae21751b24ac0c69245a5f3a5583e3bf8}{Add\-Task} (std\-::function$<$ void()$>$ func)
+\item 
+static \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_manager_1_1_task_manager_a0412532bf9b54b8df72de53f2b84e969}{Release} ()
+\item 
+static std\-::thread \hyperlink{class_osiris_i_1_1_manager_1_1_task_manager_a7442eb1b45c79c8c01910eb18ce39772}{Start\-Thread} (std\-::function$<$ void()$>$ func)
+\end{DoxyCompactItemize}
+\subsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \\*
+\hyperlink{class_osiris_i_1_1_threading_1_1_thread_pool}{Osiris\-I\-::\-Threading\-::\-Thread\-Pool} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_task_manager_afeb4ecb2eb5eb28ef60ee2932e2641f9}{thread\-Pool}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_task_manager_ae21751b24ac0c69245a5f3a5583e3bf8}{\index{Osiris\-I\-::\-Manager\-::\-Task\-Manager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}!Add\-Task@{Add\-Task}}
+\index{Add\-Task@{Add\-Task}!OsirisI::Manager::TaskManager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}}
+\subsubsection[{Add\-Task}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Manager\-::\-Task\-Manager\-::\-Add\-Task (
+\begin{DoxyParamCaption}
+\item[{std\-::function$<$ void()$>$}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_task_manager_ae21751b24ac0c69245a5f3a5583e3bf8}
+\hypertarget{class_osiris_i_1_1_manager_1_1_task_manager_a5c63688497335d230c16982063264760}{\index{Osiris\-I\-::\-Manager\-::\-Task\-Manager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!OsirisI::Manager::TaskManager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Task\-Manager\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_task_manager_a5c63688497335d230c16982063264760}
+\hypertarget{class_osiris_i_1_1_manager_1_1_task_manager_a0412532bf9b54b8df72de53f2b84e969}{\index{Osiris\-I\-::\-Manager\-::\-Task\-Manager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}!Release@{Release}}
+\index{Release@{Release}!OsirisI::Manager::TaskManager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Return\-State} Osiris\-I\-::\-Manager\-::\-Task\-Manager\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_task_manager_a0412532bf9b54b8df72de53f2b84e969}
+\hypertarget{class_osiris_i_1_1_manager_1_1_task_manager_a7442eb1b45c79c8c01910eb18ce39772}{\index{Osiris\-I\-::\-Manager\-::\-Task\-Manager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}!Start\-Thread@{Start\-Thread}}
+\index{Start\-Thread@{Start\-Thread}!OsirisI::Manager::TaskManager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}}
+\subsubsection[{Start\-Thread}]{\setlength{\rightskip}{0pt plus 5cm}std\-::thread Osiris\-I\-::\-Manager\-::\-Task\-Manager\-::\-Start\-Thread (
+\begin{DoxyParamCaption}
+\item[{std\-::function$<$ void()$>$}]{func}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_manager_1_1_task_manager_a7442eb1b45c79c8c01910eb18ce39772}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_task_manager_afeb4ecb2eb5eb28ef60ee2932e2641f9}{\index{Osiris\-I\-::\-Manager\-::\-Task\-Manager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}!thread\-Pool@{thread\-Pool}}
+\index{thread\-Pool@{thread\-Pool}!OsirisI::Manager::TaskManager@{Osiris\-I\-::\-Manager\-::\-Task\-Manager}}
+\subsubsection[{thread\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Threading\-::\-Thread\-Pool} $\ast$ Osiris\-I\-::\-Manager\-::\-Task\-Manager\-::thread\-Pool\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [protected]}}}\label{class_osiris_i_1_1_manager_1_1_task_manager_afeb4ecb2eb5eb28ef60ee2932e2641f9}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_task_manager_8hpp}{Task\-Manager.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_task_manager_8cpp}{Task\-Manager.\-cpp}\end{DoxyCompactItemize}

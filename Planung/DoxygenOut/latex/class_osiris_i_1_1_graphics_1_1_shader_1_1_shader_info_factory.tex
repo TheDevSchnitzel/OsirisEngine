@@ -1,0 +1,142 @@
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory}{\section{Osiris\-I\-:\-:Graphics\-:\-:Shader\-:\-:Shader\-Info\-Factory Class Reference}
+\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory}\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+}
+
+
+{\ttfamily \#include $<$Shader\-Info\-Factory.\-hpp$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_af42e4f7c18733b37b027703abd54ff18}{Set\-Affected\-Shader\-Type} (\hyperlink{namespace_osiris_i_1_1_graphics_1_1_shader_a337cc6333eff5c701288da2fb4fd9cec}{Shader\-Types} type)
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a47c405380a56dd9be3acce5b5985d3c9}{Set\-Affected\-Shader} (long shader\-Name\-Hash)
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a117029ceb9074dd919b85691441e675a}{Add\-Custom\-Struct} (char $\ast$struct\-Data, unsigned int size)
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_acb0c7658c6ba012d922bb8dde531b901}{Add\-Texture} (\hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_texture}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Texture} $\ast$tex)
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_af9a36942f8d7b9012be8817b2acd0a7e}{Add\-Lambda} (std\-::function$<$ char $\ast$(unsigned int $\ast$)$>$ lmd)
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_ab1c7e5f7e0b5a9e8e78cd60681a83ad3}{No\-World\-Rotation} (bool val)
+\item 
+static \hyperlink{struct_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info}{Shader\-Info} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a5616650bc010cc71dff98bef3766cc7b}{Create\-Shader\-Information} ()
+\item 
+static void \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_ac14db9f8fd87106cba8b70c773ccc6eb}{Load\-Shader\-Information} (\hyperlink{struct_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info}{Shader\-Info} $\ast$info)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static std\-::vector\\*
+$<$ \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_texture}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Texture} $\ast$ $>$ \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a6783c9b0dad63399d898c78ee08ffb7a}{textures}
+\item 
+static std\-::vector\\*
+$<$ std\-::function$<$ char \\*
+$\ast$(unsigned int $\ast$)$>$ $>$ \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a494988db05d9c399b8f25c9c9fb3292e}{lambdas}
+\item 
+static std\-::vector$<$ char $\ast$ $>$ \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a6d0291be011f6408e01c081bd606db57}{custom\-Structs}
+\item 
+static std\-::vector$<$ unsigned int $>$ \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_aa8d6385f3f0446274c861b6a187b7722}{custom\-Structs\-Size}
+\item 
+static std\-::vector$<$ unsigned \\*
+int $\ast$ $>$ \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a0dab22a3ea3c7a589767e946f7628b83}{order}
+\item 
+static \hyperlink{namespace_osiris_i_1_1_graphics_1_1_shader_a337cc6333eff5c701288da2fb4fd9cec}{Shader\-Types} \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_aef798b4d2efbde3f1f1a18f8379e1c6f}{affected\-Shader\-Type}
+\item 
+static long \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a69576e019c1efc59a377ce340d4a5d35}{affected\-Shader}
+\item 
+static bool \hyperlink{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a8bf10e3b0a6c001818b44556de52f521}{no\-World\-Rotation}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a117029ceb9074dd919b85691441e675a}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Add\-Custom\-Struct@{Add\-Custom\-Struct}}
+\index{Add\-Custom\-Struct@{Add\-Custom\-Struct}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Add\-Custom\-Struct}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Add\-Custom\-Struct (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{struct\-Data, }
+\item[{unsigned int}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a117029ceb9074dd919b85691441e675a}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_af9a36942f8d7b9012be8817b2acd0a7e}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Add\-Lambda@{Add\-Lambda}}
+\index{Add\-Lambda@{Add\-Lambda}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Add\-Lambda}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Add\-Lambda (
+\begin{DoxyParamCaption}
+\item[{std\-::function$<$ char $\ast$(unsigned int $\ast$)$>$}]{lmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_af9a36942f8d7b9012be8817b2acd0a7e}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_acb0c7658c6ba012d922bb8dde531b901}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Add\-Texture@{Add\-Texture}}
+\index{Add\-Texture@{Add\-Texture}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Add\-Texture}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Add\-Texture (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Texture} $\ast$}]{tex}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_acb0c7658c6ba012d922bb8dde531b901}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a5616650bc010cc71dff98bef3766cc7b}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Create\-Shader\-Information@{Create\-Shader\-Information}}
+\index{Create\-Shader\-Information@{Create\-Shader\-Information}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Create\-Shader\-Information}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shader\-Info} $\ast$ Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Create\-Shader\-Information (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a5616650bc010cc71dff98bef3766cc7b}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_ac14db9f8fd87106cba8b70c773ccc6eb}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Load\-Shader\-Information@{Load\-Shader\-Information}}
+\index{Load\-Shader\-Information@{Load\-Shader\-Information}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Load\-Shader\-Information}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Load\-Shader\-Information (
+\begin{DoxyParamCaption}
+\item[{{\bf Shader\-Info} $\ast$}]{info}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_ac14db9f8fd87106cba8b70c773ccc6eb}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_ab1c7e5f7e0b5a9e8e78cd60681a83ad3}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!No\-World\-Rotation@{No\-World\-Rotation}}
+\index{No\-World\-Rotation@{No\-World\-Rotation}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{No\-World\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-No\-World\-Rotation (
+\begin{DoxyParamCaption}
+\item[{bool}]{val}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_ab1c7e5f7e0b5a9e8e78cd60681a83ad3}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a47c405380a56dd9be3acce5b5985d3c9}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Set\-Affected\-Shader@{Set\-Affected\-Shader}}
+\index{Set\-Affected\-Shader@{Set\-Affected\-Shader}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Set\-Affected\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Set\-Affected\-Shader (
+\begin{DoxyParamCaption}
+\item[{long}]{shader\-Name\-Hash}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a47c405380a56dd9be3acce5b5985d3c9}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_af42e4f7c18733b37b027703abd54ff18}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!Set\-Affected\-Shader\-Type@{Set\-Affected\-Shader\-Type}}
+\index{Set\-Affected\-Shader\-Type@{Set\-Affected\-Shader\-Type}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{Set\-Affected\-Shader\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::\-Set\-Affected\-Shader\-Type (
+\begin{DoxyParamCaption}
+\item[{{\bf Shader\-Types}}]{type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_af42e4f7c18733b37b027703abd54ff18}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a69576e019c1efc59a377ce340d4a5d35}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!affected\-Shader@{affected\-Shader}}
+\index{affected\-Shader@{affected\-Shader}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{affected\-Shader}]{\setlength{\rightskip}{0pt plus 5cm}long Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::affected\-Shader\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a69576e019c1efc59a377ce340d4a5d35}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_aef798b4d2efbde3f1f1a18f8379e1c6f}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!affected\-Shader\-Type@{affected\-Shader\-Type}}
+\index{affected\-Shader\-Type@{affected\-Shader\-Type}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{affected\-Shader\-Type}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Shader\-Types} Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::affected\-Shader\-Type\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_aef798b4d2efbde3f1f1a18f8379e1c6f}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a6d0291be011f6408e01c081bd606db57}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!custom\-Structs@{custom\-Structs}}
+\index{custom\-Structs@{custom\-Structs}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{custom\-Structs}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ char $\ast$ $>$ Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::custom\-Structs\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a6d0291be011f6408e01c081bd606db57}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_aa8d6385f3f0446274c861b6a187b7722}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!custom\-Structs\-Size@{custom\-Structs\-Size}}
+\index{custom\-Structs\-Size@{custom\-Structs\-Size}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{custom\-Structs\-Size}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ unsigned int $>$ Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::custom\-Structs\-Size\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_aa8d6385f3f0446274c861b6a187b7722}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a494988db05d9c399b8f25c9c9fb3292e}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!lambdas@{lambdas}}
+\index{lambdas@{lambdas}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{lambdas}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::function$<$ char $\ast$(unsigned int $\ast$)$>$ $>$ Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::lambdas\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a494988db05d9c399b8f25c9c9fb3292e}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a8bf10e3b0a6c001818b44556de52f521}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!no\-World\-Rotation@{no\-World\-Rotation}}
+\index{no\-World\-Rotation@{no\-World\-Rotation}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{no\-World\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::no\-World\-Rotation\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a8bf10e3b0a6c001818b44556de52f521}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a0dab22a3ea3c7a589767e946f7628b83}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!order@{order}}
+\index{order@{order}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{order}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ unsigned int $\ast$ $>$ Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::order\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a0dab22a3ea3c7a589767e946f7628b83}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a6783c9b0dad63399d898c78ee08ffb7a}{\index{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}!textures@{textures}}
+\index{textures@{textures}!OsirisI::Graphics::Shader::ShaderInfoFactory@{Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory}}
+\subsubsection[{textures}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ I\-Texture $\ast$ $>$ Osiris\-I\-::\-Graphics\-::\-Shader\-::\-Shader\-Info\-Factory\-::textures\hspace{0.3cm}{\ttfamily [static]}}}\label{class_osiris_i_1_1_graphics_1_1_shader_1_1_shader_info_factory_a6783c9b0dad63399d898c78ee08ffb7a}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_shader_info_factory_8hpp}{Shader\-Info\-Factory.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_shader_info_factory_8cpp}{Shader\-Info\-Factory.\-cpp}\end{DoxyCompactItemize}

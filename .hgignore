@@ -1,0 +1,21 @@
+syntax: glob
+
+# VISUAL STUDIO
+
+*.pdb
+*.opensdf
+*.sdf
+*.vsp
+*.psess
+*.log
+*.ps1
+*.bin
+
+ipch*/
+[Bb]in
+[Bb]UILD
+[Dd]ATA
+[Tt]mp_frozen_dev
+[Dd]ebug*/
+[Rr]elease*/
+[Pp]lanung/DoxygenOut*/

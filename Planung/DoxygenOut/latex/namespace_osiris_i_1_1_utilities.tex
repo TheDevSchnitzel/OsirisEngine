@@ -1,0 +1,134 @@
+\hypertarget{namespace_osiris_i_1_1_utilities}{\section{Osiris\-I\-:\-:Utilities Namespace Reference}
+\label{namespace_osiris_i_1_1_utilities}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}
+}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_osiris_i_1_1_utilities_1_1_file_i_o_helper}{File\-I\-O\-Helper}
+\item 
+class \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String}
+\item 
+class \hyperlink{class_osiris_i_1_1_utilities_1_1_helper_functions}{Helper\-Functions}
+\item 
+class \hyperlink{class_osiris_i_1_1_utilities_1_1_logger}{Logger}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfe}{Logger\-Type} \{ \hyperlink{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfea22bf2688e8375b6d5b8677c460d6ebdc}{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-D\-B}, 
+\hyperlink{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfea6cbfc139b21e633b1095dd6a8f0289b4}{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-F\-I\-L\-E}
+ \}
+\item 
+enum \hyperlink{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20}{Log\-Range} \{ \hyperlink{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20ab58f792a1d335b01bb1cf2d16dd4cafa}{L\-O\-G\-\_\-\-I\-N\-F\-O} = 0, 
+\hyperlink{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20a16cf86ae6137d3c2e146e5b059525d63}{L\-O\-G\-\_\-\-D\-E\-B\-U\-G}, 
+\hyperlink{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20aefc23febc6fdfcac97143a6f22a2b1c9}{L\-O\-G\-\_\-\-W\-A\-R\-N}, 
+\hyperlink{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20abd9b3c508fff4e9fbca7ce7b704b650a}{L\-O\-G\-\_\-\-E\-R\-R\-O\-R}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespace_osiris_i_1_1_utilities_a50620a779c82a372f796c52d4689c039}{operator!=} (const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\item 
+bool \hyperlink{namespace_osiris_i_1_1_utilities_abcce4e24526f104c148e168810d13eea}{operator==} (const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\item 
+bool \hyperlink{namespace_osiris_i_1_1_utilities_af35fe84fa6e8d07cdc979d4366b7524b}{operator$<$=} (const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\item 
+bool \hyperlink{namespace_osiris_i_1_1_utilities_ab352f1b1f0a9cf75d1ac9bf0e97c5976}{operator$>$=} (const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\item 
+bool \hyperlink{namespace_osiris_i_1_1_utilities_a34cea40e9493fbb376d659af33799bf9}{operator$<$} (const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\item 
+bool \hyperlink{namespace_osiris_i_1_1_utilities_afdc26874cb06ae2109bd47ad9b2b45f2}{operator$>$} (const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\item 
+std\-::ostream \& \hyperlink{namespace_osiris_i_1_1_utilities_a3b6890ff75b4ab2d25c04dca9aae4889}{operator$<$$<$} (std\-::ostream \&lhs, const \hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Hashed\-String} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfe}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!Logger\-Type@{Logger\-Type}}
+\index{Logger\-Type@{Logger\-Type}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{Logger\-Type}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Osiris\-I\-::\-Utilities\-::\-Logger\-Type}}}\label{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfe}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-D\-B@{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-D\-B}!Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-D\-B@{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-D\-B}}\item[{\em 
+\hypertarget{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfea22bf2688e8375b6d5b8677c460d6ebdc}{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-D\-B}\label{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfea22bf2688e8375b6d5b8677c460d6ebdc}
+}]\index{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-F\-I\-L\-E@{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-F\-I\-L\-E}!Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-F\-I\-L\-E@{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-F\-I\-L\-E}}\item[{\em 
+\hypertarget{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfea6cbfc139b21e633b1095dd6a8f0289b4}{O\-S\-I\-R\-I\-S\-\_\-\-L\-O\-G\-G\-E\-R\-\_\-\-F\-I\-L\-E}\label{namespace_osiris_i_1_1_utilities_a77a3086b9443f21343ccbe78d283cbfea6cbfc139b21e633b1095dd6a8f0289b4}
+}]\end{description}
+\end{Desc}
+\hypertarget{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!Log\-Range@{Log\-Range}}
+\index{Log\-Range@{Log\-Range}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{Log\-Range}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Osiris\-I\-::\-Utilities\-::\-Log\-Range}}}\label{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{L\-O\-G\-\_\-\-I\-N\-F\-O@{L\-O\-G\-\_\-\-I\-N\-F\-O}!Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!L\-O\-G\-\_\-\-I\-N\-F\-O@{L\-O\-G\-\_\-\-I\-N\-F\-O}}\item[{\em 
+\hypertarget{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20ab58f792a1d335b01bb1cf2d16dd4cafa}{L\-O\-G\-\_\-\-I\-N\-F\-O}\label{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20ab58f792a1d335b01bb1cf2d16dd4cafa}
+}]\index{L\-O\-G\-\_\-\-D\-E\-B\-U\-G@{L\-O\-G\-\_\-\-D\-E\-B\-U\-G}!Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!L\-O\-G\-\_\-\-D\-E\-B\-U\-G@{L\-O\-G\-\_\-\-D\-E\-B\-U\-G}}\item[{\em 
+\hypertarget{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20a16cf86ae6137d3c2e146e5b059525d63}{L\-O\-G\-\_\-\-D\-E\-B\-U\-G}\label{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20a16cf86ae6137d3c2e146e5b059525d63}
+}]\index{L\-O\-G\-\_\-\-W\-A\-R\-N@{L\-O\-G\-\_\-\-W\-A\-R\-N}!Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!L\-O\-G\-\_\-\-W\-A\-R\-N@{L\-O\-G\-\_\-\-W\-A\-R\-N}}\item[{\em 
+\hypertarget{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20aefc23febc6fdfcac97143a6f22a2b1c9}{L\-O\-G\-\_\-\-W\-A\-R\-N}\label{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20aefc23febc6fdfcac97143a6f22a2b1c9}
+}]\index{L\-O\-G\-\_\-\-E\-R\-R\-O\-R@{L\-O\-G\-\_\-\-E\-R\-R\-O\-R}!Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}}\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!L\-O\-G\-\_\-\-E\-R\-R\-O\-R@{L\-O\-G\-\_\-\-E\-R\-R\-O\-R}}\item[{\em 
+\hypertarget{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20abd9b3c508fff4e9fbca7ce7b704b650a}{L\-O\-G\-\_\-\-E\-R\-R\-O\-R}\label{namespace_osiris_i_1_1_utilities_a8a7398a763a2e2e8cc657d8b44b95c20abd9b3c508fff4e9fbca7ce7b704b650a}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\hypertarget{namespace_osiris_i_1_1_utilities_a50620a779c82a372f796c52d4689c039}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator!=@{operator!=}}
+\index{operator!=@{operator!=}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator!=}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Utilities\-::operator!= (
+\begin{DoxyParamCaption}
+\item[{const Hashed\-String \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_a50620a779c82a372f796c52d4689c039}
+\hypertarget{namespace_osiris_i_1_1_utilities_a34cea40e9493fbb376d659af33799bf9}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator$<$}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Utilities\-::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const Hashed\-String \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_a34cea40e9493fbb376d659af33799bf9}
+\hypertarget{namespace_osiris_i_1_1_utilities_a3b6890ff75b4ab2d25c04dca9aae4889}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator$<$$<$}]{\setlength{\rightskip}{0pt plus 5cm}std\-::ostream \& Osiris\-I\-::\-Utilities\-::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_a3b6890ff75b4ab2d25c04dca9aae4889}
+\hypertarget{namespace_osiris_i_1_1_utilities_af35fe84fa6e8d07cdc979d4366b7524b}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator$<$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Utilities\-::operator$<$= (
+\begin{DoxyParamCaption}
+\item[{const Hashed\-String \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_af35fe84fa6e8d07cdc979d4366b7524b}
+\hypertarget{namespace_osiris_i_1_1_utilities_abcce4e24526f104c148e168810d13eea}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator==@{operator==}}
+\index{operator==@{operator==}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator==}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Utilities\-::operator== (
+\begin{DoxyParamCaption}
+\item[{const Hashed\-String \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_abcce4e24526f104c148e168810d13eea}
+\hypertarget{namespace_osiris_i_1_1_utilities_afdc26874cb06ae2109bd47ad9b2b45f2}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator$>$}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Utilities\-::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const Hashed\-String \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_afdc26874cb06ae2109bd47ad9b2b45f2}
+\hypertarget{namespace_osiris_i_1_1_utilities_ab352f1b1f0a9cf75d1ac9bf0e97c5976}{\index{Osiris\-I\-::\-Utilities@{Osiris\-I\-::\-Utilities}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!OsirisI::Utilities@{Osiris\-I\-::\-Utilities}}
+\subsubsection[{operator$>$=}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Utilities\-::operator$>$= (
+\begin{DoxyParamCaption}
+\item[{const Hashed\-String \&}]{lhs, }
+\item[{const Hashed\-String \&}]{rhs}
+\end{DoxyParamCaption}
+)}}\label{namespace_osiris_i_1_1_utilities_ab352f1b1f0a9cf75d1ac9bf0e97c5976}

@@ -1,0 +1,196 @@
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor}{\section{Osiris\-I\-:\-:Graphics\-:\-:Actors\-:\-:I\-Actor Class Reference}
+\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor}\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+}
+
+
+{\ttfamily \#include $<$I\-Actor.\-hpp$>$}
+
+Inheritance diagram for Osiris\-I\-:\-:Graphics\-:\-:Actors\-:\-:I\-Actor\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.575990cm]{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee2db27c96f5069b9692f41e4df3c7ac}{I\-Actor} ()
+\item 
+virtual \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a2c3d1fb4f07ab0b7b8650ca3ede8b775}{$\sim$\-I\-Actor} ()
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aad96c09eee7f3e0082986efc68520e02}{Initialize} ()=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_af0baf4bd4e739f74bb11b8871d71ba85}{Update} (float delta)=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aede25f8ef9e557bc72fcb034eaea23cd}{Recover} ()=0
+\item 
+virtual \hyperlink{namespace_osiris_i_a8f53bf938dc75c65c6a529694514013e}{Return\-State} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a507a1f5e1879c0d8a9a4a29c9bd7c411}{Release} ()=0
+\item 
+virtual \\*
+\hyperlink{struct_osiris_i_1_1_graphics_1_1_renderer_1_1_render_info}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Render\-Info} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_acce361bfc1dc81963d41961020953938}{Get\-Render\-Info} ()=0
+\item 
+\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a7ed212f9465077ba922fe0b4ed631012}{Get\-Container\-Path} ()
+\item 
+\hyperlink{struct_osiris_i_1_1_o_vector3}{Osiris\-I\-::\-O\-Vector3} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a3f4d29a08c86f3696711a15fc30f39fb}{Get\-Position} ()
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a170dd0543944ef87e552ba9abb61dd5f}{Set\-Position} (\hyperlink{struct_osiris_i_1_1_o_vector3}{Osiris\-I\-::\-O\-Vector3} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee6ea81df284578ca63a186a03dd3bcc}{position})
+\item 
+\hyperlink{struct_osiris_i_1_1_o_vector3}{Osiris\-I\-::\-O\-Vector3} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a3cf2d26df06c6a138e0305eff2e0f492}{Get\-Rotation} ()
+\item 
+void \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_af463112d067a438c342d2c9ae7500306}{Set\-Rotation} (\hyperlink{struct_osiris_i_1_1_o_vector3}{Osiris\-I\-::\-O\-Vector3} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aadbd536facb2686bdcb7d5c61c86dcd0}{rotation})
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_game_model}{I\-Game\-Model} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a474d10a3d3e71a93230510385b8cae01}{Get\-Game\-Model} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_osiris_i_1_1_utilities_1_1_hashed_string}{Osiris\-I\-::\-Utilities\-::\-Hashed\-String} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a71a1f44f10a60275425df720cfa84953}{container\-Path}
+\item 
+\hyperlink{struct_osiris_i_1_1_o_vector3}{O\-Vector3} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee6ea81df284578ca63a186a03dd3bcc}{position}
+\item 
+\hyperlink{struct_osiris_i_1_1_o_vector3}{O\-Vector3} \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aadbd536facb2686bdcb7d5c61c86dcd0}{rotation}
+\item 
+\hyperlink{struct_osiris_i_1_1_graphics_1_1_renderer_1_1_render_info}{Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Render\-Info} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a309233167da3c59ef681a8954c15bdf7}{render\-Info}
+\item 
+\hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_game_model}{I\-Game\-Model} $\ast$ \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_addc686085f0112060419e19342a08f25}{game\-Model}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee2db27c96f5069b9692f41e4df3c7ac}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!I\-Actor@{I\-Actor}}
+\index{I\-Actor@{I\-Actor}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{I\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-I\-Actor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee2db27c96f5069b9692f41e4df3c7ac}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a2c3d1fb4f07ab0b7b8650ca3ede8b775}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!$\sim$\-I\-Actor@{$\sim$\-I\-Actor}}
+\index{$\sim$\-I\-Actor@{$\sim$\-I\-Actor}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{$\sim$\-I\-Actor}]{\setlength{\rightskip}{0pt plus 5cm}virtual Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::$\sim$\-I\-Actor (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a2c3d1fb4f07ab0b7b8650ca3ede8b775}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a7ed212f9465077ba922fe0b4ed631012}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Get\-Container\-Path@{Get\-Container\-Path}}
+\index{Get\-Container\-Path@{Get\-Container\-Path}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Get\-Container\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Get\-Container\-Path (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a7ed212f9465077ba922fe0b4ed631012}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a474d10a3d3e71a93230510385b8cae01}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Get\-Game\-Model@{Get\-Game\-Model}}
+\index{Get\-Game\-Model@{Get\-Game\-Model}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Get\-Game\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Game\-Model}$\ast$ Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Get\-Game\-Model (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a474d10a3d3e71a93230510385b8cae01}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a3f4d29a08c86f3696711a15fc30f39fb}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Get\-Position@{Get\-Position}}
+\index{Get\-Position@{Get\-Position}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Get\-Position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-O\-Vector3} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Get\-Position (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a3f4d29a08c86f3696711a15fc30f39fb}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_acce361bfc1dc81963d41961020953938}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Get\-Render\-Info@{Get\-Render\-Info}}
+\index{Get\-Render\-Info@{Get\-Render\-Info}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Get\-Render\-Info}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Render\-Info}$\ast$ Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Get\-Render\-Info (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_acce361bfc1dc81963d41961020953938}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_game_model_a7f4900c522aa235876411c34c0d51740}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Game\-Model}, \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_sprite_a3a5f09f11b34d81d868eac619aeba3fb}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Sprite}, and \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_text_af27027d7d2c40bfbc363a12422597277}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Text}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a3cf2d26df06c6a138e0305eff2e0f492}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Get\-Rotation@{Get\-Rotation}}
+\index{Get\-Rotation@{Get\-Rotation}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Get\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-O\-Vector3} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Get\-Rotation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a3cf2d26df06c6a138e0305eff2e0f492}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aad96c09eee7f3e0082986efc68520e02}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Initialize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aad96c09eee7f3e0082986efc68520e02}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_sprite_a59b7a781ce451eef903b60c1dfd1eef3}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Sprite}, \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_game_model_a29d952473bef2b54dbb34eeae48c1227}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Game\-Model}, and \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_text_a7f47295a0df8523cd07acc6253727379}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Text}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aede25f8ef9e557bc72fcb034eaea23cd}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Recover@{Recover}}
+\index{Recover@{Recover}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Recover}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Recover (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aede25f8ef9e557bc72fcb034eaea23cd}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_sprite_aafa72d1dd914ac785847d9394ca01140}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Sprite}, \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_game_model_a8ae3032cd7d3e9bbfce8a7577746a6a0}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Game\-Model}, and \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_text_a750ac636809eb36c4f9a0051e07623e2}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Text}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a507a1f5e1879c0d8a9a4a29c9bd7c411}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Release@{Release}}
+\index{Release@{Release}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a507a1f5e1879c0d8a9a4a29c9bd7c411}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_game_model_a121a6c3f001921f9c536536a9300c128}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Game\-Model}, \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_text_ae4ac4dcca8326f60984c9611e29f44a3}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Text}, and \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_sprite_a06e467791896e347f302f5aa383f4675}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Sprite}.
+
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a170dd0543944ef87e552ba9abb61dd5f}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Set\-Position@{Set\-Position}}
+\index{Set\-Position@{Set\-Position}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Set\-Position}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Set\-Position (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-O\-Vector3}}]{position}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a170dd0543944ef87e552ba9abb61dd5f}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_af463112d067a438c342d2c9ae7500306}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Set\-Rotation@{Set\-Rotation}}
+\index{Set\-Rotation@{Set\-Rotation}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Set\-Rotation}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Set\-Rotation (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-O\-Vector3}}]{rotation}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_af463112d067a438c342d2c9ae7500306}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_af0baf4bd4e739f74bb11b8871d71ba85}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!Update@{Update}}
+\index{Update@{Update}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{Update}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Return\-State} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::\-Update (
+\begin{DoxyParamCaption}
+\item[{float}]{delta}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_af0baf4bd4e739f74bb11b8871d71ba85}
+
+
+Implemented in \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_game_model_a44bf34642149582f9fee57aca96506de}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Game\-Model}, \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_sprite_a681551eef6ae7b0b95bc72e18807735c}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Sprite}, and \hyperlink{class_osiris_i_1_1_graphics_1_1_actors_1_1_d_x11_text_a25c9e887c011c946e273d9a0a8ecc8ca}{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-D\-X11\-Text}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a71a1f44f10a60275425df720cfa84953}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!container\-Path@{container\-Path}}
+\index{container\-Path@{container\-Path}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{container\-Path}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Utilities\-::\-Hashed\-String} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::container\-Path\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a71a1f44f10a60275425df720cfa84953}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_addc686085f0112060419e19342a08f25}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!game\-Model@{game\-Model}}
+\index{game\-Model@{game\-Model}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{game\-Model}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\-Game\-Model}$\ast$ Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::game\-Model\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_addc686085f0112060419e19342a08f25}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee6ea81df284578ca63a186a03dd3bcc}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!position@{position}}
+\index{position@{position}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{position}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-Vector3} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::position\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aee6ea81df284578ca63a186a03dd3bcc}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a309233167da3c59ef681a8954c15bdf7}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!render\-Info@{render\-Info}}
+\index{render\-Info@{render\-Info}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{render\-Info}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Osiris\-I\-::\-Graphics\-::\-Renderer\-::\-Render\-Info}$\ast$ Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::render\-Info\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_a309233167da3c59ef681a8954c15bdf7}
+\hypertarget{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aadbd536facb2686bdcb7d5c61c86dcd0}{\index{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}!rotation@{rotation}}
+\index{rotation@{rotation}!OsirisI::Graphics::Actors::IActor@{Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor}}
+\subsubsection[{rotation}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\-Vector3} Osiris\-I\-::\-Graphics\-::\-Actors\-::\-I\-Actor\-::rotation\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_osiris_i_1_1_graphics_1_1_actors_1_1_i_actor_aadbd536facb2686bdcb7d5c61c86dcd0}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_i_actor_8hpp}{I\-Actor.\-hpp}\end{DoxyCompactItemize}

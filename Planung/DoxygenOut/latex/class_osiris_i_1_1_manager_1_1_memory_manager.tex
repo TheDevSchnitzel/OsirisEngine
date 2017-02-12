@@ -1,0 +1,98 @@
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager}{\section{Osiris\-I\-:\-:Manager\-:\-:Memory\-Manager Class Reference}
+\label{class_osiris_i_1_1_manager_1_1_memory_manager}\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+}
+
+
+{\ttfamily \#include $<$Memory\-Manager.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_a9cae21e7afc31764b036c4f75866be12}{Memory\-Manager} ()
+\item 
+\hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_ac816c274b374350016533c88f08396c4}{$\sim$\-Memory\-Manager} ()
+\item 
+bool \hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_a4fb46d34956633e48266ec58b741cbba}{Register\-Pool} (\hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool}{Osiris\-I\-::\-Memory\-::\-Memory\-Pool} $\ast$memory\-Pool, std\-::string name)
+\item 
+\hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool}{Osiris\-I\-::\-Memory\-::\-Memory\-Pool} $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_a6e3aeb5f2e5f896ddcd38e2899d8f3af}{Get\-Memory\-Pool} (std\-::string name)
+\item 
+bool \hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_ac1470b7ecd00a3977bdc8f4bece939d4}{Free\-Pool} (std\-::string name)
+\item 
+void $\ast$ \hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_a6d7f04ad64012f59a23864165ee34d92}{Alloc} (unsigned int size, const char $\ast$file=\char`\"{}\char`\"{}, const char $\ast$function=\char`\"{}\char`\"{}, const char $\ast$line=\char`\"{}\char`\"{})
+\item 
+void \hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_a0f413573cb56f82a8729aa86afc9de5a}{Free} (void $\ast$ptr)
+\item 
+bool \hyperlink{class_osiris_i_1_1_manager_1_1_memory_manager_afc2a4821e51120679f26669fae08abb4}{Release} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_a9cae21e7afc31764b036c4f75866be12}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Memory\-Manager@{Memory\-Manager}}
+\index{Memory\-Manager@{Memory\-Manager}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Memory\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Memory\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_a9cae21e7afc31764b036c4f75866be12}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_ac816c274b374350016533c88f08396c4}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!$\sim$\-Memory\-Manager@{$\sim$\-Memory\-Manager}}
+\index{$\sim$\-Memory\-Manager@{$\sim$\-Memory\-Manager}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{$\sim$\-Memory\-Manager}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::$\sim$\-Memory\-Manager (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_ac816c274b374350016533c88f08396c4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_a6d7f04ad64012f59a23864165ee34d92}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Alloc}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Alloc (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{size, }
+\item[{const char $\ast$}]{file = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const char $\ast$}]{function = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{const char $\ast$}]{line = {\ttfamily \char`\"{}\char`\"{}}}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_a6d7f04ad64012f59a23864165ee34d92}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_a0f413573cb56f82a8729aa86afc9de5a}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Free@{Free}}
+\index{Free@{Free}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Free}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_a0f413573cb56f82a8729aa86afc9de5a}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_ac1470b7ecd00a3977bdc8f4bece939d4}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Free\-Pool@{Free\-Pool}}
+\index{Free\-Pool@{Free\-Pool}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Free\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Free\-Pool (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_ac1470b7ecd00a3977bdc8f4bece939d4}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_a6e3aeb5f2e5f896ddcd38e2899d8f3af}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Get\-Memory\-Pool@{Get\-Memory\-Pool}}
+\index{Get\-Memory\-Pool@{Get\-Memory\-Pool}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Get\-Memory\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Memory\-Pool} $\ast$ Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Get\-Memory\-Pool (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_a6e3aeb5f2e5f896ddcd38e2899d8f3af}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_a4fb46d34956633e48266ec58b741cbba}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Register\-Pool@{Register\-Pool}}
+\index{Register\-Pool@{Register\-Pool}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Register\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Register\-Pool (
+\begin{DoxyParamCaption}
+\item[{{\bf Osiris\-I\-::\-Memory\-::\-Memory\-Pool} $\ast$}]{memory\-Pool, }
+\item[{std\-::string}]{name}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_a4fb46d34956633e48266ec58b741cbba}
+\hypertarget{class_osiris_i_1_1_manager_1_1_memory_manager_afc2a4821e51120679f26669fae08abb4}{\index{Osiris\-I\-::\-Manager\-::\-Memory\-Manager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}!Release@{Release}}
+\index{Release@{Release}!OsirisI::Manager::MemoryManager@{Osiris\-I\-::\-Manager\-::\-Memory\-Manager}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Manager\-::\-Memory\-Manager\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_manager_1_1_memory_manager_afc2a4821e51120679f26669fae08abb4}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_memory_manager_8hpp}{Memory\-Manager.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_memory_manager_8cpp}{Memory\-Manager.\-cpp}\end{DoxyCompactItemize}

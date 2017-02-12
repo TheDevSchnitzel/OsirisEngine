@@ -1,0 +1,122 @@
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool}{\section{Osiris\-I\-:\-:Memory\-:\-:Memory\-Pool Class Reference}
+\label{class_osiris_i_1_1_memory_1_1_memory_pool}\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+}
+
+
+{\ttfamily \#include $<$Memory\-Pool.\-hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a722ba2966f75be637179f0ff0d9f6e7e}{Memory\-Pool} ()
+\item 
+\hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a52d1a7cf1d6e4d370a14f4e8cee081d9}{$\sim$\-Memory\-Pool} ()
+\item 
+bool \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_ab145911f46972c7932fc253ac0b4a84f}{Initialize} (unsigned int heap\-Size, unsigned int chunk\-Size)
+\item 
+bool \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a0d58e4a0f219779bde26af4b475f5856}{Release} ()
+\item 
+void $\ast$ \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_aaa8eb18f227cc52f3ec4c6577f7f1923}{Alloc} (size\-\_\-t size)
+\item 
+bool \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a409c310cc6623f0c4eb3129d0b01a154}{Free} (void $\ast$ptr)
+\item 
+void \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a82226bec3f3f8ae8daa87dd3849fbd43}{Dump\-Memory} ()
+\item 
+unsigned int \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a4233647c5d052a0e59bbd8a706d3278c}{Get\-Chunk\-Size} ()
+\item 
+unsigned int \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a7420efe1a6af46d78feb40247548b2a8}{Get\-Pool\-Size} ()
+\item 
+unsigned int \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_a8104339f9caac4e0079706da1daa7ed4}{Get\-Used\-Size} ()
+\item 
+unsigned int \hyperlink{class_osiris_i_1_1_memory_1_1_memory_pool_ae29e4789c855b26efebd3b2b133cf5f6}{Get\-Free\-Size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a722ba2966f75be637179f0ff0d9f6e7e}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Memory\-Pool@{Memory\-Pool}}
+\index{Memory\-Pool@{Memory\-Pool}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Memory\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Memory\-Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a722ba2966f75be637179f0ff0d9f6e7e}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a52d1a7cf1d6e4d370a14f4e8cee081d9}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!$\sim$\-Memory\-Pool@{$\sim$\-Memory\-Pool}}
+\index{$\sim$\-Memory\-Pool@{$\sim$\-Memory\-Pool}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{$\sim$\-Memory\-Pool}]{\setlength{\rightskip}{0pt plus 5cm}Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::$\sim$\-Memory\-Pool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a52d1a7cf1d6e4d370a14f4e8cee081d9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_aaa8eb18f227cc52f3ec4c6577f7f1923}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Alloc@{Alloc}}
+\index{Alloc@{Alloc}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Alloc}]{\setlength{\rightskip}{0pt plus 5cm}void $\ast$ Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Alloc (
+\begin{DoxyParamCaption}
+\item[{size\-\_\-t}]{size}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_aaa8eb18f227cc52f3ec4c6577f7f1923}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a82226bec3f3f8ae8daa87dd3849fbd43}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Dump\-Memory@{Dump\-Memory}}
+\index{Dump\-Memory@{Dump\-Memory}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Dump\-Memory}]{\setlength{\rightskip}{0pt plus 5cm}void Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Dump\-Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a82226bec3f3f8ae8daa87dd3849fbd43}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a409c310cc6623f0c4eb3129d0b01a154}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Free@{Free}}
+\index{Free@{Free}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Free}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Free (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{ptr}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a409c310cc6623f0c4eb3129d0b01a154}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a4233647c5d052a0e59bbd8a706d3278c}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Get\-Chunk\-Size@{Get\-Chunk\-Size}}
+\index{Get\-Chunk\-Size@{Get\-Chunk\-Size}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Get\-Chunk\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Get\-Chunk\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a4233647c5d052a0e59bbd8a706d3278c}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_ae29e4789c855b26efebd3b2b133cf5f6}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Get\-Free\-Size@{Get\-Free\-Size}}
+\index{Get\-Free\-Size@{Get\-Free\-Size}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Get\-Free\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Get\-Free\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_ae29e4789c855b26efebd3b2b133cf5f6}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a7420efe1a6af46d78feb40247548b2a8}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Get\-Pool\-Size@{Get\-Pool\-Size}}
+\index{Get\-Pool\-Size@{Get\-Pool\-Size}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Get\-Pool\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Get\-Pool\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a7420efe1a6af46d78feb40247548b2a8}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a8104339f9caac4e0079706da1daa7ed4}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Get\-Used\-Size@{Get\-Used\-Size}}
+\index{Get\-Used\-Size@{Get\-Used\-Size}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Get\-Used\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Get\-Used\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a8104339f9caac4e0079706da1daa7ed4}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_ab145911f46972c7932fc253ac0b4a84f}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Initialize}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Initialize (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{heap\-Size, }
+\item[{unsigned int}]{chunk\-Size}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_ab145911f46972c7932fc253ac0b4a84f}
+\hypertarget{class_osiris_i_1_1_memory_1_1_memory_pool_a0d58e4a0f219779bde26af4b475f5856}{\index{Osiris\-I\-::\-Memory\-::\-Memory\-Pool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}!Release@{Release}}
+\index{Release@{Release}!OsirisI::Memory::MemoryPool@{Osiris\-I\-::\-Memory\-::\-Memory\-Pool}}
+\subsubsection[{Release}]{\setlength{\rightskip}{0pt plus 5cm}bool Osiris\-I\-::\-Memory\-::\-Memory\-Pool\-::\-Release (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_osiris_i_1_1_memory_1_1_memory_pool_a0d58e4a0f219779bde26af4b475f5856}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_memory_pool_8hpp}{Memory\-Pool.\-hpp}\item 
+C\-:/\-Users/\-Xenogenesis/\-Documents/\-Visual Studio 2012/\-Projects/\-Osiris/\-Source/\-Osiris\-I/\hyperlink{_memory_pool_8cpp}{Memory\-Pool.\-cpp}\end{DoxyCompactItemize}
