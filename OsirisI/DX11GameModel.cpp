@@ -69,7 +69,7 @@ namespace OsirisI {
 				for(unsigned int i = 0; i < this->meshes.size(); i++) {
                     OS_CHECKSTATE(this->meshes[i]->Update(delta));
 				}
-				this->rotation.x = (this->rotation.x + 0.001 > 360) ? 0 : this->rotation.x + 0.01;
+				//this->rotation.x = (this->rotation.x + 0.001 > 360) ? 0 : this->rotation.x + 0.01;
 				//this->rotation.y = (this->rotation.y + 0.004 > 360) ? 0 : this->rotation.y + 0.004;
 				//this->rotation.z = (this->rotation.z + 0.008 > 360) ? 0 : this->rotation.z + 0.008;
 				return OS_OK;

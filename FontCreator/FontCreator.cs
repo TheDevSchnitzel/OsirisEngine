@@ -49,7 +49,7 @@ namespace FontCreator {
             Bitmap bmp2 = new Bitmap(100, 100);
             StringFormat sf = new StringFormat();
             sf.FormatFlags = StringFormatFlags.DirectionRightToLeft;
-            Font font = new Font(fontFamily, 25, FontStyle.Regular, GraphicsUnit.Pixel);
+            Font font = new Font(fontFamily, (int)NUD_FontSize.Value, FontStyle.Regular, GraphicsUnit.Pixel);
             Dictionary<int, UV_Coordinates> mappingUV = new Dictionary<int, UV_Coordinates>();
             Hashtable bitmapMapping = new Hashtable();
             using ( Graphics g = Graphics.FromImage(bmp2) ) {

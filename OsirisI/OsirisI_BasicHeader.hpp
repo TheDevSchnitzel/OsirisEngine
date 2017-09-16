@@ -53,6 +53,7 @@
 #include "ISceneNode.hpp"
 #include "IRenderer.hpp"
 #include "IShader.hpp"
+#include "DebugScene.hpp"
 
 #include "DX11Shader.hpp"
 #include "RootNode.hpp"

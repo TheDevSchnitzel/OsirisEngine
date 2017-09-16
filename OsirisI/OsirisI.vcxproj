@@ -69,11 +69,11 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\local\boost_1_57_0;$(SolutionDir)..\EXTERN\inc;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\local\boost_1_57_0\lib64-msvc-12.0;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\EXTERN\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\local\boost_1_57_0;$(SolutionDir)..\..\EXTERN\inc;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\local\boost_1_57_0\lib64-msvc-12.0;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(SolutionDir)..\..\EXTERN\libs;$(LibraryPath)</LibraryPath>
     <OutDir>$(SolutionDir)..\BUILD\$(ProjectName)\$(Configuration)\</OutDir>
     <TargetExt>.lib</TargetExt>
-    <SourcePath>$(SolutionDir)..\EXTERN\src;$(SourcePath)</SourcePath>
+    <SourcePath>$(SolutionDir)..\..\EXTERN\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <TargetExt>.lib</TargetExt>
@@ -182,6 +182,7 @@
     <ClInclude Include="CameraActor.hpp" />
     <ClInclude Include="ComponentNode.hpp" />
     <ClInclude Include="Converter.hpp" />
+    <ClInclude Include="DebugScene.hpp" />
     <ClInclude Include="Direct3DDevice.hpp" />
     <ClInclude Include="DirectX11Renderer.hpp" />
     <ClInclude Include="DirectXUsings.hpp" />
@@ -276,6 +277,7 @@
     <ClCompile Include="CameraActor.cpp" />
     <ClCompile Include="ComponentNode.cpp" />
     <ClCompile Include="Converter.cpp" />
+    <ClCompile Include="DebugScene.cpp" />
     <ClCompile Include="Direct3DDevice.cpp" />
     <ClCompile Include="DirectX11Renderer.cpp" />
     <ClCompile Include="dllmain.cpp">

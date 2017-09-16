@@ -10,17 +10,19 @@ namespace OsirisI {
             class IText : public ISprite {
                 protected:
 					IText(OsirisI::Utilities::HashedString name) : ISprite(name) {}
-                    std::string text;
+					std::string text;
+					std::string oldText;
                     OsirisI::Resources::Font* font;
                     OsirisI::OVector4 color;
-                    int pixelSize;                    
+                    int pixelSize; 
 
                 public:
                     std::string GetText() {
                         return this->text;
                     }
                     void SetText(std::string text) {
-                        this->text = text;
+						this->oldText = this->text;
+						this->text = text;
                     }
 
                     OsirisI::OVector4 GetColor() {

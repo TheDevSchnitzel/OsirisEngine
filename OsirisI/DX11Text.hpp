@@ -20,6 +20,7 @@ namespace OsirisI {
                     
                 private:
                     OsirisI::ReturnState UpdateVerticesPositions();
+					OsirisI::ReturnState CreateMesh();
             };
         }
     }

@@ -8,12 +8,16 @@ using namespace OsirisI::Utilities;
 namespace OsirisI {
     namespace Manager {
         std::map<long, Graphics::Scenes::IScene*> SceneManager::scenes;
-        Graphics::Scenes::IScene* SceneManager::activeScene;
+		Graphics::Scenes::IScene* SceneManager::activeScene;
+		Debug::DebugScene* SceneManager::systemOverlayScene;
         IRenderer *SceneManager::renderer;
         std::mutex SceneManager::lock;
 
         ReturnState SceneManager::Initialize(IRenderer* renderer) {
             SceneManager::renderer = renderer;
+
+			systemOverlayScene = new Debug::DebugScene(HashedString("DBGSCN"));
+
             return OS_OK;
         }
 
@@ -89,6 +93,22 @@ namespace OsirisI {
                 return OS_OK;
             }
         }
+		
+		Debug::DebugScene* SceneManager::GetSystemOverlayScene() {
+			{// Wait till you get a lock - then cover it with a lock_guard so it's released when this block goes out of scope
+				lock.lock();
+				std::lock_guard<std::mutex> lockG(lock, std::adopt_lock);
+				return systemOverlayScene;
+			}
+		}
+
+		void SceneManager::SetSystemOverlayScene(Debug::DebugScene* scene) {
+			{// Wait till you get a lock - then cover it with a lock_guard so it's released when this block goes out of scope
+				lock.lock();
+				std::lock_guard<std::mutex> lockG(lock, std::adopt_lock);
+				systemOverlayScene = scene;
+			}
+		}
 
         ReturnState SceneManager::Update(float delta) {
             {// Wait till you get a lock - then cover it with a lock_guard so it's released when this block goes out of scope
@@ -102,6 +122,11 @@ namespace OsirisI {
                 if(activeScene->GetRootNode() != nullptr) {
 					OS_CHECKSTATE(activeScene->GetRootNode()->Update(delta));
                 }
+				
+				if (systemOverlayScene != nullptr)
+				{
+					systemOverlayScene->Update(delta);
+				}
 				
 				return activeScene->Update(delta);
             }
@@ -119,8 +144,22 @@ namespace OsirisI {
                 OMatrix4x4 tmpViewMatrix;
 				((CameraActor*)((ActorNode*)renderer->GetCameraNode())->GetActor())->GetViewMatrix(tmpViewMatrix);
                 renderer->SetBaseViewMatrix(tmpViewMatrix);
-
+								
                 std::vector<RenderInfo*> renderInfos = activeScene->GetRootNode()->GetRenderInfos();
+				
+				if(systemOverlayScene != nullptr)
+				{
+					RootNode* rn = systemOverlayScene->GetRootNode();
+
+					if (rn != nullptr) 
+					{
+						for each (RenderInfo* ri in rn->GetRenderInfos())
+						{
+							renderInfos.push_back(ri);
+						}
+					}
+				}
+
                 for (unsigned int i = 0; i < renderInfos.size(); i++) {
                     RenderInfo* ri = renderInfos[i];
                     if (ri != nullptr) {

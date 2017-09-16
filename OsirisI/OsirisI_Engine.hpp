@@ -87,6 +87,8 @@
 #include "RootNode.hpp"
 #include "SkyNode.hpp"
 #include "ComponentNode.hpp"
+
+#include "DebugScene.hpp"
 #pragma endregion
 
 #pragma region DX-Specific

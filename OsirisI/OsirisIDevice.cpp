@@ -31,6 +31,8 @@ namespace OsirisI {
     }
     
 	OsirisIDevice::OsirisIDevice(int width, int height, bool windowed, bool vsync) {
+		IsReleased = false;
+
 		if (Logger::Initialize(OSIRIS_LOGGER_FILE, LOG_RANGE_INFO) != OS_OK) {
 			throw new std::exception("Initialization of Logger failed!");
 			return;
@@ -198,14 +200,18 @@ namespace OsirisI {
 	}
 
 	bool OsirisIDevice::Release() {
+		if (IsReleased) return true;
+
 		stopMainLoop = true;
 
-		if(this->graphicDevice != nullptr) {
+		if(this->graphicDevice != nullptr){
 			this->graphicDevice->Release();
 			delete this->graphicDevice;
 		}
 
         server->Stop();
+
+		IsReleased = true;
 
 		return true;
 	}

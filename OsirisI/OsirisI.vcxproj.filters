@@ -148,6 +148,12 @@
     <Filter Include="Quelldateien\OsirisI\System\Scripting">
       <UniqueIdentifier>{f4440d7e-4066-4040-8784-77ce9a21be3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Headerdateien\OsirisI\System\Debug">
+      <UniqueIdentifier>{818117ac-3cce-4c80-a303-94dd5a4748bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Quelldateien\OsirisI\System\Debug">
+      <UniqueIdentifier>{25718ec5-e7fb-4b42-9767-8f5b02bf1ea8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -429,6 +435,9 @@
     <ClInclude Include="Timer.hpp">
       <Filter>Headerdateien\OsirisI\Utilities</Filter>
     </ClInclude>
+    <ClInclude Include="DebugScene.hpp">
+      <Filter>Headerdateien\OsirisI\System\Debug</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -604,6 +613,9 @@
     </ClCompile>
     <ClCompile Include="Timer.cpp">
       <Filter>Quelldateien\OsirisI\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="DebugScene.cpp">
+      <Filter>Quelldateien\OsirisI\System\Debug</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

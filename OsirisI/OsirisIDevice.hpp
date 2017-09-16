@@ -33,6 +33,7 @@ namespace OsirisI {
 			static OsirisI_DeviceType DeviceType;
 			static OsirisIDevice* g_OsirisIDevice;
 			std::mutex lock;
+			bool IsReleased;
 
 		private:
 			bool SetupInternal();

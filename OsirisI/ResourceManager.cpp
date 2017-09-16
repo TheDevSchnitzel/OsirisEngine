@@ -54,6 +54,8 @@ namespace OsirisI {
 		}*/
 		
 		Resource* ResourceManager::GetResourceDirectly(std::string resPath) {
+			if (resourceFiles.size() == 0) return nullptr;
+
 			std::vector<std::string> splitted = HelperFunctions::split(resPath, ':');
 			if(splitted.size() == 1) {
 				Resource* res = nullptr;
